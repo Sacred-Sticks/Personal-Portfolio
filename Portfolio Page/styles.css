@@ -1,17 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
+input[type="text"] {
+  outline: 2px solid rgba(0, 255, 1, 0.5);
 }
 
-#console {
-  background-color: black;
-  color: white;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  font-family: monospace;
-  padding: 20px;
+input[type="text"]:focus {
+  outline: none;
 }
 
-/* Add CSS styles to achieve the Windows console appearance */
-/* You can customize the styles further to match your desired design */
+.hidden {
+  display: none;
+}
+
+.text-primary {
+  color: rgb(0, 255, 1) !important;
+}
+
+.bg-primary {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.bg-secondary {
+  background-color: rgb(10, 10, 10) !important;
+}
+
+.border-primary {
+  border-color: rgb(5, 5, 5) !important;
+}
+
+.font-primary {
+  font-family: monospace, "Courier New" !important;
+}
+
+.font-secondary {
+  font-family: "Courier New" !important;
+}
+
+.height-90 {
+  height: 90%;
+}
