@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#console {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  font-family: monospace;
+  padding: 20px;
+}
+
+/* Add CSS styles to achieve the Windows console appearance */
+/* You can customize the styles further to match your desired design */
