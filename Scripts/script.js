@@ -105,6 +105,7 @@ function showCommands() {
     commandElement.classList.add('text-center');
     commandElement.classList.add('text-secondary')
     commandElement.classList.add('py-2');
+    commandElement.classList.add('text-truncate');
     commandElement.textContent = "/" + command;
     commandRow.appendChild(commandElement);
     commandListParent.appendChild(commandRow);
@@ -128,9 +129,10 @@ function assignProjects() {
 function assignButtons() {
   buttons.forEach(button => {
     button.onclick = function() {
-      button.parentElement.parentElement.parentElement.classList.add('hidden');
+      button.parentElement.parentElement.parentElement.parentElement.classList.add('hidden');
       inputElement.disabled = false;
       inputElement.focus();
+      console.log('pressed');
     }
   });
 }
