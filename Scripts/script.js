@@ -57,6 +57,7 @@ function GetTarget(option, args) {
 function printToConsole(output) {
   const outputElement = document.createElement('div');
   outputElement.classList.add('row');
+  outputElement.classList.add('text-truncate')
   outputElement.textContent = output;
   consoleElement.prepend(outputElement);
 }
@@ -129,7 +130,7 @@ function assignProjects() {
 function assignButtons() {
   buttons.forEach(button => {
     button.onclick = function() {
-      button.parentElement.parentElement.parentElement.parentElement.classList.add('hidden');
+      button.parentElement.parentElement.parentElement.classList.add('hidden');
       inputElement.disabled = false;
       inputElement.focus();
       console.log('pressed');

@@ -13,14 +13,14 @@
     <div class="row h-100">
       <div class="col-2">
         <div class="row">
-          <h3 class="text-break font-secondary text-secondary text-center pt-4 pb-2">Commands</h3>
+          <h3 class="text-break font-secondary text-secondary text-center pt-4 pb-2 text-truncate">Commands</h3>
         </div>
         <div class="row" id="commandList">
         </div>
       </div>
-      <div class="col-10 d-flex flex-column h-100 overflow-hidden">
+      <div class="col-10 d-flex flex-column overflow-hidden">
         <div class="row">
-          <h1 class="font-secondary text-secondary text-center pt-3">Lucas Ackman</h1>
+          <h1 class="font-secondary text-secondary text-center pt-3 text-truncate">Lucas Ackman</h1>
         </div>
         <div class="row flex-grow-1 bg-primary text-secondary p-4 border border-primary border-left-5 border-right-5 font-primary">
           <div class="col">
@@ -36,22 +36,51 @@
                 </div>
               </div>
             </label>
-            <div class="row height-100">
+            <div class="row">
               <div class="col-3">
                 <div id="console">
 
                 </div>
               </div>
-              <div class="col-8 height-90 my-4">
-                <div class="row height-100">
-                  <div class="col border height-100 text-primary hidden overflow-auto" id="overview">
-                    <div class="row align-items-center border-bottom">
-                      <h1 class="col position-relative top-5 left-5 pt-1">Lorem ipsum dolor.</h1>
+              <div class="col-8 my-4">
+                <div class="row">
+                  <div class="col border text-primary hidden" id="overview">
+                    <div class="row align-items-center border-bottom bg-primary">
+                      <h1 class="col position-relative top-5 left-5 pt-1">Overview</h1>
                       <div class="col-auto">
                         <button type="button" name="close-window" class="fs-5 window-closer">X</button>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row overflow-auto height-60">
+                      <p>My name is Lucas Ackman, I am a software engineer specializing in video game development. My passion lies
+                        in creating immersive and engaging gaming experiences for players. With a strong background in software
+                        engineering, I bring a unique perspective to game development, driven by my personal journey.</p>
+                      <p>Having grown up with a disability that necessitated the use of crutches, computers became my primary form
+                        of entertainment. This experience fueled my desire to share the same joy and entertainment I found in games
+                        with others, regardless of their life circumstances.</p>
+                      <p>My skill set encompasses various areas, including software engineering, SOLID design principles, gameplay programming, game design,
+                        level design, and web development. This broad expertise enables me to contribute to
+                        different aspects of game development and tackle diverse challenges.</p>
+                      <p>Throughout my career, I have worked on a range of projects with varying scopes. I have actively participated
+                        in numerous game jams, where I thrived in fast-paced and collaborative environments. Additionally, I have also
+                        worked on longer-term projects, allowing me to gain a deeper understanding of the development lifecycle.</p>
+                      <p>One project that I am particularly proud of is a package I have been developing for Unity projects. This
+                        package is designed to be universally useful in all Unity projects, offering essential classes such as an input
+                        system, serialization system, and other commonly utilized features. It serves as a testament to my dedication
+                        to creating efficient and reusable solutions using the SOLID design principles.</p>
+                      <p>To explore my portfolio and discover more about my projects, please use the 'open' command followed the project
+                        you want to explore.</p>
+                    </div>
+                  </div>
+
+                  <div class="col border text-primary hidden" id="contact">
+                    <div class="row align-items-center border-bottom">
+                      <h1 class="col position-relative top-5 left-5 pt-1">Contact Me</h1>
+                      <div class="col-auto">
+                        <button type="button" name="close-window" class="fs-5 window-closer">X</button>
+                      </div>
+                    </div>
+                    <div class="row overflow-auto height-60">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
                       <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
@@ -63,45 +92,80 @@
                       <p>Mauris venenatis risus in velit hendrerit finibus.</p>
                     </div>
                   </div>
-
-                  <div class="col border height-100 text-primary hidden" id="contact">
-                    <div class="row">
-                      contact
-                        <div class="col d-flex p-0  justify-content-end">
-                          <button type="button" name="close-window" class="fs-5 window-closer">X</button>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col border height-100 text-primary hidden" id="socials">
-                    <div class="row">
-                      socials
-                        <div class="col d-flex p-0  justify-content-end">
-                          <button type="button" name="close-window" class="fs-5 window-closer">X</button>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col border height-100 text-primary hidden" id="p.kickstarter">
-                    <div class="row">
-                      Kickstarter
-                      <div class="col d-flex p-0  justify-content-end">
+                  <div class="col border text-primary hidden" id="socials">
+                    <div class="row align-items-center border-bottom">
+                      <h1 class="col position-relative top-5 left-5 pt-1">My Socials</h1>
+                      <div class="col-auto">
                         <button type="button" name="close-window" class="fs-5 window-closer">X</button>
                       </div>
                     </div>
+                    <div class="row overflow-auto height-60">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
+                      <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
+                      <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
+                      <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla. Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a porttitor nunc, vel blandit mi.</p>
+                      <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra magna, quis commodo justo.</p>
+                      <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus. Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada suscipit quam, a fringilla massa ultrices vel.</p>
+                      <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere ligula. Ut in laoreet nulla.</p>
+                      <p>Mauris venenatis risus in velit hendrerit finibus.</p>
+                    </div>
                   </div>
-                  <div class="col border height-100 text-primary hidden" id="p.blacksite-theta">
-                    <div class="row">
-                      Blacksite Theta
-                      <div class="col d-flex p-0  justify-content-end">
+                  <div class="col border text-primary hidden" id="p.kickstarter">
+                    <div class="row align-items-center border-bottom">
+                      <h1 class="col position-relative top-5 left-5 pt-1">Unity Kickstarter Package</h1>
+                      <div class="col-auto">
                         <button type="button" name="close-window" class="fs-5 window-closer">X</button>
                       </div>
                     </div>
+                    <div class="row overflow-auto height-60">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
+                      <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
+                      <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
+                      <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla. Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a porttitor nunc, vel blandit mi.</p>
+                      <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra magna, quis commodo justo.</p>
+                      <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus. Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada suscipit quam, a fringilla massa ultrices vel.</p>
+                      <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere ligula. Ut in laoreet nulla.</p>
+                      <p>Mauris venenatis risus in velit hendrerit finibus.</p>
+                    </div>
                   </div>
-                  <div class="col border height-100 text-primary hidden" id="p.where-silence-survives">
-                    <div class="row">
-                      Where Silence Survives
-                      <div class="col d-flex p-0  justify-content-end">
+                  <div class="col border text-primary hidden" id="p.blacksite-theta">
+                    <div class="row align-items-center border-bottom">
+                      <h1 class="col position-relative top-5 left-5 pt-1">Blacksite Theta</h1>
+                      <div class="col-auto">
                         <button type="button" name="close-window" class="fs-5 window-closer">X</button>
                       </div>
+                    </div>
+                    <div class="row overflow-auto height-60">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
+                      <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
+                      <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
+                      <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla. Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a porttitor nunc, vel blandit mi.</p>
+                      <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra magna, quis commodo justo.</p>
+                      <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus. Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada suscipit quam, a fringilla massa ultrices vel.</p>
+                      <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere ligula. Ut in laoreet nulla.</p>
+                      <p>Mauris venenatis risus in velit hendrerit finibus.</p>
+                    </div>
+                  </div>
+                  <div class="col border text-primary hidden" id="p.where-silence-survives">
+                    <div class="row align-items-center border-bottom">
+                      <h1 class="col position-relative top-5 left-5 pt-1">Where Silence Survives</h1>
+                      <div class="col-auto">
+                        <button type="button" name="close-window" class="fs-5 window-closer">X</button>
+                      </div>
+                    </div>
+                    <div class="row overflow-auto height-60">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
+                      <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
+                      <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
+                      <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla. Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a porttitor nunc, vel blandit mi.</p>
+                      <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra magna, quis commodo justo.</p>
+                      <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus. Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada suscipit quam, a fringilla massa ultrices vel.</p>
+                      <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere ligula. Ut in laoreet nulla.</p>
+                      <p>Mauris venenatis risus in velit hendrerit finibus.</p>
                     </div>
                   </div>
                 </div>
