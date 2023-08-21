@@ -1,182 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucas Ackman</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="Stylesheets/styles.css">
-  <link rel="stylesheet" href="Stylesheets/bootstrap-extensions.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Ackman</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Stylesheets/styles.css">
+    <link rel="stylesheet" href="Stylesheets/bootstrap-extensions.css">
 </head>
 <body class="bg-secondary">
-  <div class="container-fluid vh-100 overflow-hidden">
+<div class="container-fluid vh-100 overflow-hidden">
     <div class="row h-100">
-      <div class="col-2">
-        <div class="row">
-          <h3 class="text-break font-secondary text-secondary text-center pt-4 pb-2 text-truncate">Commands</h3>
-        </div>
-        <div class="row" id="commandList">
-        </div>
-      </div>
-      <div class="col-10 d-flex flex-column overflow-hidden">
-        <div class="row">
-          <h1 class="font-secondary text-secondary text-center pt-3 text-truncate">Lucas Ackman</h1>
-        </div>
-        <div class="row flex-grow-1 bg-primary text-secondary p-4 border border-primary border-left-5 border-right-5 font-primary">
-          <div class="col">
-            <label class = "w-100">
-              <div class="row">
-                <div class="col-2 d-flex align-items-center">
-                  <div class="fs-5 p-1 text-truncate">
-                    Enter Command:
-                  </div>
-                </div>
-                <div class="col-10">
-                  <input title="commandInput" type="text" name="command" class="w-100 text-secondary bg-primary border-0 fs-4" id="commandInput">
-                </div>
-              </div>
-            </label>
+        <div class="col-2">
             <div class="row">
-              <div class="col-3">
-                <div id="console">
-
-                </div>
-              </div>
-              <div class="col-8 my-4">
-                <div class="row">
-                  <div class="col border text-primary hidden" id="overview">
-                    <div class="row align-items-center border-bottom bg-primary">
-                      <h1 class="col position-relative top-5 left-5 pt-1">Overview</h1>
-                      <div class="col-auto">
-                        <button type="button" name="close-window" class="fs-5 window-closer">X</button>
-                      </div>
-                    </div>
-                    <div class="row overflow-auto height-60">
-                      <p>My name is Lucas Ackman, I am a software engineer specializing in video game development. My passion lies
-                        in creating immersive and engaging gaming experiences for players. With a strong background in software
-                        engineering, I bring a unique perspective to game development, driven by my personal journey.</p>
-                      <p>Having grown up with a disability that necessitated the use of crutches, computers became my primary form
-                        of entertainment. This experience fueled my desire to share the same joy and entertainment I found in games
-                        with others, regardless of their life circumstances.</p>
-                      <p>My skill set encompasses various areas, including software engineering, SOLID design principles, gameplay programming, game design,
-                        level design, and web development. This broad expertise enables me to contribute to
-                        different aspects of game development and tackle diverse challenges.</p>
-                      <p>Throughout my career, I have worked on a range of projects with varying scopes. I have actively participated
-                        in numerous game jams, where I thrived in fast-paced and collaborative environments. Additionally, I have also
-                        worked on longer-term projects, allowing me to gain a deeper understanding of the development lifecycle.</p>
-                      <p>One project that I am particularly proud of is a package I have been developing for Unity projects. This
-                        package is designed to be universally useful in all Unity projects, offering essential classes such as an input
-                        system, serialization system, and other commonly utilized features. It serves as a testament to my dedication
-                        to creating efficient and reusable solutions using the SOLID design principles.</p>
-                      <p>To explore my portfolio and discover more about my projects, please use the 'open' command followed the project
-                        you want to explore.</p>
-                    </div>
-                  </div>
-                  <div class="col border text-primary hidden" id="contact">
-                    <div class="row align-items-center border-bottom">
-                      <h1 class="col position-relative top-5 left-5 pt-1">Contact Me</h1>
-                      <div class="col-auto">
-                        <button type="button" name="close-window" class="fs-5 window-closer">X</button>
-                      </div>
-                    </div>
-                    <div class="row overflow-auto height-60">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
-                      <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
-                      <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
-                      <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla. Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a porttitor nunc, vel blandit mi.</p>
-                      <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra magna, quis commodo justo.</p>
-                      <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus. Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada suscipit quam, a fringilla massa ultrices vel.</p>
-                      <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere ligula. Ut in laoreet nulla.</p>
-                      <p>Mauris venenatis risus in velit hendrerit finibus.</p>
-                    </div>
-                  </div>
-                  <div class="col border text-primary hidden" id="socials">
-                    <div class="row align-items-center border-bottom">
-                      <h1 class="col position-relative top-5 left-5 pt-1">My Socials</h1>
-                      <div class="col-auto">
-                        <button type="button" name="close-window" class="fs-5 window-closer">X</button>
-                      </div>
-                    </div>
-                    <div class="row overflow-auto height-60">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
-                      <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
-                      <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
-                      <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla. Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a porttitor nunc, vel blandit mi.</p>
-                      <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra magna, quis commodo justo.</p>
-                      <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus. Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada suscipit quam, a fringilla massa ultrices vel.</p>
-                      <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere ligula. Ut in laoreet nulla.</p>
-                      <p>Mauris venenatis risus in velit hendrerit finibus.</p>
-                    </div>
-                  </div>
-                  <div class="col border text-primary hidden" id="p.kickstarter">
-                    <div class="row align-items-center border-bottom">
-                      <h1 class="col position-relative top-5 left-5 pt-1">Unity Kickstarter Package</h1>
-                      <div class="col-auto">
-                        <button type="button" name="close-window" class="fs-5 window-closer">X</button>
-                      </div>
-                    </div>
-                    <div class="row overflow-auto height-60">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
-                      <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
-                      <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
-                      <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla. Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a porttitor nunc, vel blandit mi.</p>
-                      <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra magna, quis commodo justo.</p>
-                      <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus. Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada suscipit quam, a fringilla massa ultrices vel.</p>
-                      <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere ligula. Ut in laoreet nulla.</p>
-                      <p>Mauris venenatis risus in velit hendrerit finibus.</p>
-                    </div>
-                  </div>
-                  <div class="col border text-primary hidden" id="p.blacksite-theta">
-                    <div class="row align-items-center border-bottom">
-                      <h1 class="col position-relative top-5 left-5 pt-1">Blacksite Theta</h1>
-                      <div class="col-auto">
-                        <button type="button" name="close-window" class="fs-5 window-closer">X</button>
-                      </div>
-                    </div>
-                    <div class="row overflow-auto height-60">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
-                      <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
-                      <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
-                      <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla. Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a porttitor nunc, vel blandit mi.</p>
-                      <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra magna, quis commodo justo.</p>
-                      <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus. Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada suscipit quam, a fringilla massa ultrices vel.</p>
-                      <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere ligula. Ut in laoreet nulla.</p>
-                      <p>Mauris venenatis risus in velit hendrerit finibus.</p>
-                    </div>
-                  </div>
-                  <div class="col border text-primary hidden" id="p.where-silence-survives">
-                    <div class="row align-items-center border-bottom">
-                      <h1 class="col position-relative top-5 left-5 pt-1">Where Silence Survives</h1>
-                      <div class="col-auto">
-                        <button type="button" name="close-window" class="fs-5 window-closer">X</button>
-                      </div>
-                    </div>
-                    <div class="row overflow-auto height-60">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum arcu et.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
-                      <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci at arcu varius, at malesuada elit posuere. Etiam vulputate luctus hendrerit.</p>
-                      <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
-                      <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla. Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a porttitor nunc, vel blandit mi.</p>
-                      <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra magna, quis commodo justo.</p>
-                      <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus. Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada suscipit quam, a fringilla massa ultrices vel.</p>
-                      <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere ligula. Ut in laoreet nulla.</p>
-                      <p>Mauris venenatis risus in velit hendrerit finibus.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <h3 class="text-break font-secondary text-secondary text-center pt-4 pb-2 text-truncate">Commands</h3>
             </div>
-          </div>
+            <div class="row" id="commandList">
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="col-10 d-flex flex-column overflow-hidden">
+            <div class="row">
+                <h1 class="font-secondary text-secondary text-center pt-3 text-truncate">Lucas Ackman</h1>
+            </div>
+            <div class="row flex-grow-1 bg-primary text-secondary p-4 border border-primary border-left-5 border-right-5 font-primary">
+                <div class="col">
+                    <label class="w-100">
+                        <div class="row">
+                            <div class="col-2 d-flex align-items-center">
+                                <div class="fs-5 p-1 text-truncate">
+                                    Enter Command:
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <input title="commandInput" type="text" name="command"
+                                       class="w-100 text-secondary bg-primary border-0 fs-4" id="commandInput">
+                            </div>
+                        </div>
+                    </label>
+                    <div class="row">
+                        <div class="col-3">
+                            <div id="console">
 
-  <script src="Scripts/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+                            </div>
+                        </div>
+                        <div class="col-8 my-4">
+                            <div class="row">
+                                <div class="col border text-primary hidden" id="overview">
+                                    <div class="row align-items-center border-bottom bg-primary">
+                                        <h1 class="col position-relative top-5 left-5 pt-1">Overview</h1>
+                                        <div class="col-auto">
+                                            <button type="button" name="close-window" class="fs-5 window-closer">X
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow-auto height-60">
+                                        <p>My name is Lucas Ackman, I am a software engineer specialized in video game
+                                            development. My passion lies in creating engaging gaming experiences for
+                                            players. With a strong background in software engineering, I understand the
+                                            development process of game development. However I also offer a unique
+                                            perspective on topics due to the personal journey I've taken to get where I
+                                            am now.</p>
+                                        <p>Having grown up with a disability that necessitated the use of crutches,
+                                            computers became my primary form of entertainment. This experience fueled my
+                                            desire to share the same joy and entertainment I found in games with others,
+                                            regardless of their life circumstances.</p>
+                                        <p>My skill set encompasses various areas, including software engineering, SOLID
+                                            design principles, gameplay programming, game design, level design, and web
+                                            development. This broad expertise enables me to contribute to different
+                                            aspects of game development and tackle diverse challenges.</p>
+                                        <p>Throughout my career, I have worked on a range of projects with varying
+                                            scopes. I have actively participated in numerous game jams, where I thrived
+                                            in fast-paced and collaborative environments. Additionally, I have also
+                                            worked on longer-term projects, allowing me to gain a deeper understanding
+                                            of the development lifecycle.</p>
+                                        <p>One project that I am particularly proud of is a package I have been
+                                            developing for Unity projects. This package is designed to be universally
+                                            useful in all Unity projects, offering essential classes such as an input
+                                            system, serialization system, and other commonly utilized features. It
+                                            serves as a testament to my dedication to creating efficient and reusable
+                                            solutions using the SOLID design principles.</p>
+                                        <p>To explore my portfolio and discover more about my projects, please use the
+                                            'open' command followed the project you want to explore.</p>
+                                    </div>
+                                </div>
+                                <div class="col border text-primary hidden" id="contact">
+                                    <div class="row align-items-center border-bottom">
+                                        <h1 class="col position-relative top-5 left-5 pt-1">Contact Me</h1>
+                                        <div class="col-auto">
+                                            <button type="button" name="close-window" class="fs-5 window-closer">X
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow-auto height-60">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum
+                                            arcu et.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at
+                                            tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
+                                        <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci
+                                            at arcu varius, at malesuada elit posuere. Etiam vulputate luctus
+                                            hendrerit.</p>
+                                        <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin
+                                            facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus
+                                            blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
+                                        <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla.
+                                            Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a
+                                            porttitor nunc, vel blandit mi.</p>
+                                        <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis
+                                            venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci
+                                            odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra
+                                            magna, quis commodo justo.</p>
+                                        <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus.
+                                            Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in
+                                            faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada
+                                            suscipit quam, a fringilla massa ultrices vel.</p>
+                                        <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut
+                                            molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere
+                                            ligula. Ut in laoreet nulla.</p>
+                                        <p>Mauris venenatis risus in velit hendrerit finibus.</p>
+                                    </div>
+                                </div>
+                                <div class="col border text-primary hidden" id="socials">
+                                    <div class="row align-items-center border-bottom">
+                                        <h1 class="col position-relative top-5 left-5 pt-1">My Socials</h1>
+                                        <div class="col-auto">
+                                            <button type="button" name="close-window" class="fs-5 window-closer">X
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow-auto height-60">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum
+                                            arcu et.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at
+                                            tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
+                                        <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci
+                                            at arcu varius, at malesuada elit posuere. Etiam vulputate luctus
+                                            hendrerit.</p>
+                                        <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin
+                                            facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus
+                                            blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
+                                        <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla.
+                                            Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a
+                                            porttitor nunc, vel blandit mi.</p>
+                                        <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis
+                                            venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci
+                                            odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra
+                                            magna, quis commodo justo.</p>
+                                        <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus.
+                                            Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in
+                                            faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada
+                                            suscipit quam, a fringilla massa ultrices vel.</p>
+                                        <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut
+                                            molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere
+                                            ligula. Ut in laoreet nulla.</p>
+                                        <p>Mauris venenatis risus in velit hendrerit finibus.</p>
+                                    </div>
+                                </div>
+                                <div class="col border text-primary hidden" id="p.kickstarter">
+                                    <div class="row align-items-center border-bottom">
+                                        <h1 class="col position-relative top-5 left-5 pt-1">Unity Kickstarter
+                                            Package</h1>
+                                        <div class="col-auto">
+                                            <button type="button" name="close-window" class="fs-5 window-closer">X
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow-auto height-60">
+                                        <p>When I began my senior year at the University of Wisconsin, Whitewater, I
+                                            started a new project to serve as a starting point for all of my future
+                                            Unity Projects. I later labeled this project as my Kickstarter Package, as
+                                            it contained essentials needed to kickstart most if not all of my projects,
+                                            such as input management, serialization, event management, and more.</p>
+                                        <p>Data Types: I wanted to create scriptable objects to contain data such as
+                                            floats, ints, or other common data types. This was primarily to decouple
+                                            systems that needed to share access to some values such as player
+                                            health.</p>
+                                        <p>Inputs: I crafted an enhanced input system using the Unity Input System for
+                                            improved performance, employing events. Throughout development, I refined
+                                            the system: I began with the scriptable objects above for decoupling, but
+                                            later adopted delegates and integrated Actions. This approach led to an
+                                            efficient input solution.</p>
+                                        <p>Events: I managed to develop two separate event solutions. In my initial
+                                            approach, I used scriptable objects as event buses, while the later involved
+                                            creating an event manager which controlled every event that was involved
+                                            with it. Each event bus functions as its own event entity, while the event
+                                            manager serves as a centralized static class, housing a comprehensive list
+                                            of all events.</p>
+                                        <p>Animations: I utilized an abstract class as an Animation Manager,
+                                            streamlining animation implementation. Inheriting classes gained access to
+                                            protected methods for animator control through animation state names,
+                                            bypassing the need for complex animation trees. I also provided options to
+                                            modify an animator's parameters using dedicated methods if developers prefer
+                                            the animation trees.</p>
+                                        <p>Serialization: I designed an abstract class to serve as a serialization
+                                            manager, streamlining data saving and loading through delegates. This
+                                            approach mandated data types to implement TryParse and ToString methods via
+                                            an interface. ToString would print out any information required to
+                                            reconstruct it, while TryParse instructs on how to reconstruct the data type
+                                            using that information.</p>
+                                        <p>I also brought in some smaller additions: object categorization and player
+                                            data management. Object categories used scriptable objects rather than
+                                            strings to flexibly group GameObjects. The player class held player info,
+                                            primarily their input type, making sure everyone gets the correct input
+                                            subscriptions in local multiplayer games.</p>
+                                        <p>To view the Kickstarter package, click
+                                            <a href="https://github.com/Sacred-Sticks/UnityPackages/tree/main/UnityPackages/Assets/Kickstarter">here</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col border text-primary hidden" id="p.blacksite-theta">
+                                    <div class="row align-items-center border-bottom">
+                                        <h1 class="col position-relative top-5 left-5 pt-1">Blacksite Theta</h1>
+                                        <div class="col-auto">
+                                            <button type="button" name="close-window" class="fs-5 window-closer">X
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow-auto height-60">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum
+                                            arcu et.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at
+                                            tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
+                                        <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci
+                                            at arcu varius, at malesuada elit posuere. Etiam vulputate luctus
+                                            hendrerit.</p>
+                                        <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin
+                                            facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus
+                                            blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
+                                        <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla.
+                                            Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a
+                                            porttitor nunc, vel blandit mi.</p>
+                                        <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis
+                                            venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci
+                                            odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra
+                                            magna, quis commodo justo.</p>
+                                        <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus.
+                                            Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in
+                                            faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada
+                                            suscipit quam, a fringilla massa ultrices vel.</p>
+                                        <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut
+                                            molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere
+                                            ligula. Ut in laoreet nulla.</p>
+                                        <p>Mauris venenatis risus in velit hendrerit finibus.</p>
+                                    </div>
+                                </div>
+                                <div class="col border text-primary hidden" id="p.where-silence-survives">
+                                    <div class="row align-items-center border-bottom">
+                                        <h1 class="col position-relative top-5 left-5 pt-1">Where Silence Survives</h1>
+                                        <div class="col-auto">
+                                            <button type="button" name="close-window" class="fs-5 window-closer">X
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow-auto height-60">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum
+                                            arcu et.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit at
+                                            tortor id lacinia. Donec consequat sem a mi facilisis accumsan.</p>
+                                        <p>Curabitur accumsan metus vitae lorem pharetra tincidunt. Sed vestibulum orci
+                                            at arcu varius, at malesuada elit posuere. Etiam vulputate luctus
+                                            hendrerit.</p>
+                                        <p>Donec eget nisl eros. Suspendisse bibendum in nulla sed tempus. Proin
+                                            facilisis cursus justo sed vestibulum. Morbi pulvinar, velit a faucibus
+                                            blandit, risus nisi fringilla est, vel rutrum quam massa nec arcu.</p>
+                                        <p>Aliquam at ultrices justo, ac blandit nulla. Mauris finibus egestas nulla.
+                                            Morbi ac auctor nibh. Aliquam cursus cursus elementum. Pellentesque a
+                                            porttitor nunc, vel blandit mi.</p>
+                                        <p>Donec eu ante sagittis, pulvinar odio quis, commodo lacus. Nullam iaculis
+                                            venenatis dui. Praesent elementum, ipsum sit amet cursus tristique, orci
+                                            odio dignissim elit, a euismod urna augue eu ligula. Praesent nec viverra
+                                            magna, quis commodo justo.</p>
+                                        <p>Vestibulum elementum viverra dictum. Sed gravida nibh in pulvinar cursus.
+                                            Morbi quis mauris sed ante dictum eleifend. Vestibulum ante ipsum primis in
+                                            faucibus orci luctus et ultrices posuere cubilia curae; Integer malesuada
+                                            suscipit quam, a fringilla massa ultrices vel.</p>
+                                        <p>Cras in turpis ipsum. Aenean tincidunt odio tempor semper interdum. Ut
+                                            molestie ex a luctus auctor. Quisque sit amet dapibus urna, eget posuere
+                                            ligula. Ut in laoreet nulla.</p>
+                                        <p>Mauris venenatis risus in velit hendrerit finibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Scripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
