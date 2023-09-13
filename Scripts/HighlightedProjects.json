@@ -2,13 +2,13 @@
   {
     "name": "Kickstarter",
     "description": "A Unity package to kickstart development",
-    "image": "kickstarter-thumbnail.png",
+    "imageLocation": "kickstarter-thumbnail.png",
     "imageAlt": "Some random unity image idk yet"
   },
   {
     "name": "Blacksite Theta",
     "description": "A University capstone project",
-    "image": "../Images/Blacksite-Theta/thumbnail.png",
+    "imageLocation": "../Images/Blacksite-Theta/thumbnail.png",
     "imageAlt": "Abandoned warehouse level in Blacksite Theta"
   }
 ]
