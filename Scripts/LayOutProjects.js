@@ -1,8 +1,9 @@
 class project {
-    constructor(name, description, bannerImage) {
+    constructor(name, description, bannerImage, imageAlt) {
         this.name = name;
         this.description = description;
         this.bannerImage = bannerImage;
+        this.imageAlt = imageAlt;
     }
 }
 
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const highlightedProjectsRoot = document.getElementById("Highlighted-Projects");
     highlightedProjects.forEach(p => AddProject(highlightedProjectsRoot, p));
     
-    fetch('HighlightedProjects.json')
+    fetch("https://raw.githubusercontent.com/Sacred-Sticks/sacred-sticks.github.io/main/Scripts/HighlightedProjects.json\n")
         .then(response => response.json())
         .then(projects => 
             projects.forEach(project => AddProject(highlightedProjectsRoot, project)));
@@ -41,7 +42,7 @@ function AddProject(rootElement, project) {
 
     image.src = project.bannerImage;
     image.classList.add("card-img-top");
-    image.alt = project.name;
+    image.alt = project.imageAlt;
 
     body.classList.add("card-body");
 
