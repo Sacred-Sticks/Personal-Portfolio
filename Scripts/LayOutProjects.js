@@ -10,7 +10,7 @@ class project {
 document.addEventListener("DOMContentLoaded", function () {
     const highlightedProjectsRoot = document.getElementById("Highlighted-Projects");
     
-    fetch("https://raw.githubusercontent.com/Sacred-Sticks/sacred-sticks.github.io/main/Scripts/HighlightedProjects.json\n")
+    fetch("https://raw.githubusercontent.com/Sacred-Sticks/sacred-sticks.github.io/main/Scripts/HighlightedProjects.json")
         .then(response => response.json())
         .then(projects => 
             projects.forEach(project => AddProject(highlightedProjectsRoot, project)));
