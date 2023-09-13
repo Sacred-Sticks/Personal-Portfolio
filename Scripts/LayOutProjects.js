@@ -7,17 +7,8 @@ class project {
     }
 }
 
-// Individual projects here
-const kickstarter = new project("Unity Kickstarter Package", "...", "image.png")
-// Project groupings
-const highlightedProjects = []
-const professionalProjects = []
-const personalProjects = []
-const gameJams = []
-const classAssignments = []
 document.addEventListener("DOMContentLoaded", function () {
     const highlightedProjectsRoot = document.getElementById("Highlighted-Projects");
-    highlightedProjects.forEach(p => AddProject(highlightedProjectsRoot, p));
     
     fetch("https://raw.githubusercontent.com/Sacred-Sticks/sacred-sticks.github.io/main/Scripts/HighlightedProjects.json\n")
         .then(response => response.json())
