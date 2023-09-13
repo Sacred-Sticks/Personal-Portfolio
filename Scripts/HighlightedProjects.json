@@ -1,0 +1,13 @@
+﻿[
+  {
+    "name": "Kickstarter",
+    "description": "A Unity package to kickstart development",
+    "image": "kickstarter-thumbnail.png"
+  },
+  {
+    "name": "Blacksite Theta",
+    "description": "A University capstone project",
+    "image": "blacksite-theta-thumbnail.png"
+  }
+]
+
