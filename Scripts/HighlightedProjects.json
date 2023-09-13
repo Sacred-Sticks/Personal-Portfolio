@@ -8,7 +8,7 @@
   {
     "name": "Blacksite Theta",
     "description": "A University capstone project",
-    "imageLocation": "../Images/Blacksite-Theta/thumbnail.png",
+    "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
     "imageAlt": "Abandoned warehouse level in Blacksite Theta"
   }
 ]
