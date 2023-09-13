@@ -1,8 +1,8 @@
 class project {
-    constructor(name, description, bannerImage, imageAlt) {
+    constructor(name, description, imageLocation, imageAlt) {
         this.name = name;
         this.description = description;
-        this.bannerImage = bannerImage;
+        this.imageLocation = imageLocation;
         this.imageAlt = imageAlt;
     }
 }
@@ -40,7 +40,7 @@ function AddProject(rootElement, project) {
 
     link.href = "#";
 
-    image.src = project.bannerImage;
+    image.src = project.imageLocation;
     image.classList.add("card-img-top");
     image.alt = project.imageAlt;
 
