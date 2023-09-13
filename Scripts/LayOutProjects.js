@@ -1,12 +1,3 @@
-class project {
-    constructor(name, description, imageLocation, imageAlt) {
-        this.name = name;
-        this.description = description;
-        this.imageLocation = imageLocation;
-        this.imageAlt = imageAlt;
-    }
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     const highlightedProjectsRoot = document.getElementById("Highlighted-Projects");
     
