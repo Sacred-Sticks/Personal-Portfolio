@@ -7,6 +7,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    color: #74b9f6 !important;
+}
+
 .bg-primary {
     background-color: #282828 !important;
 }
