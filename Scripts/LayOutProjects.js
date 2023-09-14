@@ -16,11 +16,11 @@ function AddProject(rootElement, project) {
     const title = document.createElement("h5");
     const description = document.createElement("p");
 
-    container.classList.add("col-lg-4", "col-md-6");
+    container.classList.add("col-lg-4", "col-md-6", "text-primary");
 
     card.classList.add("card", "bg-secondary", "m-2");
 
-    link.href = "#";
+    link.href = project.linkAddress;
 
     image.src = project.imageLocation;
     image.classList.add("card-img-top");

@@ -2,18 +2,24 @@ body {
     background-color: #1e1e1e !important;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .bg-primary {
-    background-color: #ffffff !important;
+    background-color: #282828 !important;
 }
 
 .bg-secondary {
-    background-color: #808080 !important;
+    background-color: #4b4b4b !important;
 }
 
 .text-primary {
-    color: #c8c8c8 !important;
+    color: #afdcff !important;
 }
 
 .text-header {
-    color: #0000ff !important;
+    color: #c823ff !important;
 }
+
