@@ -1,0 +1,23 @@
+﻿[
+  {
+    "name": "Jungle Runaway",
+    "description": "My first ever graded game project",
+    "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
+    "imageAlt": "Abandoned warehouse level in Blacksite Theta",
+    "linkAddress": "#"
+  },
+  {
+    "name": "A Statue in Time",
+    "description": "My first game that I fully programmed",
+    "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
+    "imageAlt": "Abandoned warehouse level in Blacksite Theta",
+    "linkAddress": "#"
+  },
+  {
+    "name": "Ecology Simulation",
+    "description": "A simulated ecosystem made for a Software Engineering course",
+    "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
+    "imageAlt": "Abandoned warehouse level in Blacksite Theta",
+    "linkAddress": "#"
+  }
+]
