@@ -8,14 +8,14 @@
   },
   {
     "name": "Against the Machine",
-    "description": "Created during the GMTK 2022 Game Jam. Theme: Roll of the Dice",
+    "description": "Made for the GMTK 2022 Game Jam. Theme: Roll of the Dice",
     "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
     "imageAlt": "Abandoned warehouse level in Blacksite Theta",
     "linkAddress": "#"
   },
   {
     "name": "Chain Game",
-    "description": "My first time playing with the Unity physics engine. Theme unknown",
+    "description": "My first time using Unity physics. Theme unknown",
     "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
     "imageAlt": "Abandoned warehouse level in Blacksite Theta",
     "linkAddress": "#"
@@ -29,7 +29,7 @@
   },
   {
     "name": "Lone Escape",
-    "description": "My first project working on actual gameplay. Theme: Alone",
+    "description": "My first project working on gameplay. Theme: Alone",
     "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
     "imageAlt": "Abandoned warehouse level in Blacksite Theta",
     "linkAddress": "#"
