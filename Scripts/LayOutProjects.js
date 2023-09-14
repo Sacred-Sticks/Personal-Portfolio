@@ -38,7 +38,7 @@ function AddProject(rootElement, project) {
 
     container.classList.add("col-lg-4", "col-md-6", "text-primary", "mb-3");
 
-    card.classList.add("card", "bg-secondary", "m-2");
+    card.classList.add("card", "bg-secondary", "m-2", "d-md-block", "height-95");
 
     link.href = project.linkAddress;
 

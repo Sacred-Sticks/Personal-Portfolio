@@ -1,7 +1,7 @@
 ﻿[
   {
-    "name": "Jungle Runaway",
-    "description": "My first ever graded game project",
+    "name": "Ecology Simulation",
+    "description": "A simulated ecosystem made for Software Engineering",
     "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
     "imageAlt": "Abandoned warehouse level in Blacksite Theta",
     "linkAddress": "#"
@@ -14,8 +14,8 @@
     "linkAddress": "#"
   },
   {
-    "name": "Ecology Simulation",
-    "description": "A simulated ecosystem made for Software Engineering",
+    "name": "Jungle Runaway",
+    "description": "My first ever graded game project",
     "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
     "imageAlt": "Abandoned warehouse level in Blacksite Theta",
     "linkAddress": "#"
