@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const highlightedProjectsRoot = document.getElementById("Highlighted-Projects");
+    const showcaseProjectsRoot = document.getElementById("Showcase-Projects");
     const professionalProjectsRoot = document.getElementById("Professional-Projects");
     const personalProjectsRoot = document.getElementById("Personal-Projects");
     const gameJamProjectsRoot = document.getElementById("Game-Jam-Projects");
     const classProjectsRoot = document.getElementById("Class-Work-Projects")
 
-    fetch("https://raw.githubusercontent.com/Sacred-Sticks/sacred-sticks.github.io/main/Scripts/HighlightedProjects.json")
+    fetch("https://raw.githubusercontent.com/Sacred-Sticks/sacred-sticks.github.io/main/Scripts/ShowcaseProjects.json")
         .then(response => response.json())
         .then(projects =>
-            projects.forEach(project => AddProject(highlightedProjectsRoot, project)));
+            projects.forEach(project => AddProject(showcaseProjectsRoot, project)));
     fetch("https://raw.githubusercontent.com/Sacred-Sticks/sacred-sticks.github.io/main/Scripts/ProfessionalProjects.json")
         .then(response => response.json())
         .then(projects =>
