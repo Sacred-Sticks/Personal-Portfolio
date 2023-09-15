@@ -16,14 +16,14 @@
   {
     "name": "Where Silence Survives",
     "description": "My first VR game jam. Theme: Single Use",
-    "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
+    "imageLocation": "Images/Where-Silence-Survives/thumbnail.png",
     "imageAlt": "Abandoned warehouse level in Blacksite Theta",
     "linkAddress": "#"
   },
   {
     "name": "Lone Escape",
     "description": "My first project working on gameplay. Theme: Alone",
-    "imageLocation": "Images/Blacksite-Theta/thumbnail.png",
+    "imageLocation": "Images/Lone-Escape/thumbnail.png",
     "imageAlt": "Abandoned warehouse level in Blacksite Theta",
     "linkAddress": "#"
   },
