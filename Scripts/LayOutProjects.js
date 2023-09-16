@@ -5,23 +5,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const gameJamProjectsRoot = document.getElementById("Game-Jam-Projects");
     const classProjectsRoot = document.getElementById("Class-Work-Projects")
 
-    fetch("https://raw.githubusercontent.com/Sacred-Sticks/portfolio-projects/main/ShowcaseProjects.json")
+    fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/ShowcaseProjects.json")
         .then(response => response.json())
         .then(projects =>
             projects.forEach(project => AddProject(showcaseProjectsRoot, project)));
-    fetch("https://raw.githubusercontent.com/Sacred-Sticks/portfolio-projects/main/ProfessionalProjects.json")
+    fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/ProfessionalProjects.json")
         .then(response => response.json())
         .then(projects =>
             projects.forEach(project => AddProject(professionalProjectsRoot, project)));
-    fetch("https://raw.githubusercontent.com/Sacred-Sticks/portfolio-projects/main/PersonalProjects.json")
+    fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/PersonalProjects.json")
         .then(response => response.json())
         .then(projects =>
             projects.forEach(project => AddProject(personalProjectsRoot, project)));
-    fetch("https://raw.githubusercontent.com/Sacred-Sticks/portfolio-projects/main/GameJamProjects.json")
+    fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/GameJamProjects.json")
         .then(response => response.json())
         .then(projects =>
             projects.forEach(project => AddProject(gameJamProjectsRoot, project)));
-    fetch("https://raw.githubusercontent.com/Sacred-Sticks/portfolio-projects/main/ClassWorkProjects.json")
+    fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/ClassWorkProjects.json")
         .then(response => response.json())
         .then(projects =>
             projects.forEach(project => AddProject(classProjectsRoot, project)));
