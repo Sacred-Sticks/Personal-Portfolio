@@ -1,5 +1,6 @@
 body {
     background-color: #1e1e1e !important;
+    overflow-x: hidden;
 }
 
 a {
@@ -25,6 +26,10 @@ a:hover {
 
 .text-header {
     color: #d66af6 !important;
+}
+
+.text-indent {
+    text-indent: 75px;
 }
 
 .height-95 {
