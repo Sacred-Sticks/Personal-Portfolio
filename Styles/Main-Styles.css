@@ -12,6 +12,10 @@ a:hover {
     color: #74b9f6 !important;
 }
 
+.anchor {
+    scroll-margin-top: 150px;
+}
+
 .bg-primary {
     background-color: #282828 !important;
 }
@@ -24,12 +28,48 @@ a:hover {
     color: #afdcff !important;
 }
 
+.text-secondary {
+    color: #ffffff !important;
+}
+
 .text-header {
     color: #d66af6 !important;
 }
 
 .text-indent {
-    text-indent: 75px;
+    text-indent: 50px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline-header {
+    text-decoration-color: #d66af6 !important; 
+}
+
+.underline-primary {
+    text-decoration-color: #afdcff !important;
+}
+
+.underline-secondary {
+    text-decoration-color: #ffffff !important;
+}
+
+.border-right {
+    border-right: solid;
+}
+
+.border-left {
+    border-left: solid;
+}
+
+.border-primary {
+    border-color: #ffffff !important;
+}
+
+.border-secondary {
+    border-color: #afdcff !important;
 }
 
 .height-95 {

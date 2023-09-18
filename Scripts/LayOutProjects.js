@@ -27,6 +27,21 @@ document.addEventListener("DOMContentLoaded", function () {
             projects.forEach(project => AddProject(classProjectsRoot, project)));
 });
 
+document.querySelectorAll('a[data-scroll-to]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetId = this.getAttribute('data-scroll-to');
+        var target = document.querySelector(targetId);
+        if (target) {
+            var offset = target.getBoundingClientRect().top + 70; // Adjust the offset based on your navbar height
+            window.scrollBy({
+                top: offset,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
 function AddProject(rootElement, project) {
     const container = document.createElement("div");
     const card = document.createElement("div");
