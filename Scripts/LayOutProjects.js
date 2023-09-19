@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const professionalProjectsRoot = document.getElementById("Professional-Projects");
     const personalProjectsRoot = document.getElementById("Personal-Projects");
     const gameJamProjectsRoot = document.getElementById("Game-Jam-Projects");
-    const classProjectsRoot = document.getElementById("Class-Work-Projects")
+    const classProjectsRoot = document.getElementById("Class-Projects")
 
     fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/ShowcaseProjects.json")
         .then(response => response.json())
