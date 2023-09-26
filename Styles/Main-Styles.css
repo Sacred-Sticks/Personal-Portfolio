@@ -29,6 +29,10 @@ a:hover {
     background-color: #4b4b4b !important;
 }
 
+.bg-tertiary {
+    background-color: rgba(10, 10, 10, 50%);
+}
+
 .text-primary {
     color: #afdcff !important;
 }
