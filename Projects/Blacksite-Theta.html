@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Template</title>
+    <script src="Scripts/LayOutProjects.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Main-Styles.css">
+</head>
+<body>
+<div class="row bg-secondary text-center py-3 fixed-top" id="navbar">
+    <div class="col-6 col-md-2 offset-3 offset-md-1"><h1><a href="../index.html#header">Lucas Ackman</a></h1></div>
+</div>
+<div class="py-4"></div>
+<div class="row text-primary justify-content-center border-bottom border-5">
+    <img src="../Images/Blacksite-Theta/Banner.png" alt="Template Banner">
+</div>
+<div class="container border-3 border-left border-right border-bottom border-primary">
+    <div class="row justify-content-center">
+        <div class="col-6 text-primary border-left border-right border-primary" id="Project-Overview">
+            <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+            <h4 class="text-secondary text-center">Brief Description</h4>
+            <p class="text-indent text-primary">
+                Blacksite Theta is a University of Wisconsin-Whitewater capstone project that I was lucky enough to be
+                able to work on. The game used an alien creature imbedded into your characters arms to give you control
+                over unique abilities based around growth and retraction of your arms, super strength, and electricity.
+                You had to navigate and survive through a series of puzzles to reach the ending of the game.
+            </p>
+            <div class="border-top border-bottom mt-4 mb-4"></div>
+            <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+            <p class="text-indent text-primary">
+                I was working primarily in the tech team of the Blacksite Theta, though I also did work in the design of
+                the project. A majority of my time during development was spent on the character controller, as it
+                needed to work well alone while also being compatible with the movement abilities that player had. I was
+                also contributing to the abilities themselves, as I had fully developed the growth and retraction
+                abilities, the strength rebound and the shattering of the smashed crates, and heavily refactored the
+                electric abilities to work with larger systems.
+            </p>
+            <div class="border-top border-bottom mt-4 mb-4"></div>
+            <h4 class="text-secondary text-center">Challenges Faced</h4>
+            <ol>
+                <li class="text-primary">
+                    There were many challenges during development, some of which were quick to solve but the ones that
+                    stand out were far larger. We needed to allow for abilities to cancel the character movement when
+                    they controllled the movement with the Retraction, Rebound, and Dash abilities.
+                </li>
+                <li class="text-primary">
+                    Another large problem was the animations of the player, as we wanted the arms to move specifically
+                    to the place where they were being used, such as actually hitting the crates that are being smashed.
+                    Lastly, grounding animations and airborne animations were tricky, as my controller wasn't created
+                    with ramped surfaces being considered as far as animations were considered. This led to the airborne
+                    animation triggerring falsely when walking up or down a ramped surface. Unfortunately, I was unable
+                    to perfect the ramp issue when development finished.
+                </li>
+            </ol>
+            <div class="border-top border-bottom mt-4 mb-4"></div>
+            <h4 class="text-secondary text-center">Lessons Learned</h4>
+            <ol>
+                <li class="text-primary">
+                    Luckily, I was learning the SOLID design principles in another class during this project, which made
+                    it possible for me to use those lessons throughout development. I learned how important it is to
+                    decouple code to keep systems separate and allow for expansion. Originally, we only had two player
+                    powersets in mind, the growth and strength powers, and later added the electric abilities. I learned
+                    how to develop my character controller to allow for more abilities to be added without needing to
+                    modify the code of it for each movement ability using events.
+                </li>
+                <li class=" text-primary">
+                    I also had been learning the basics of inverse kinematics for another class working on a virtual
+                    reality full body avatar. That knowledge made it easy for me to implement the arm ability animations
+                    in such a way to where they would be aimed correctly at the point of interaction.
+                </li>
+            </ol>
+        </div>
+        <div class="col-6 text-primary border-left border-right border-primary">
+            <div class="row border-3 border-bottom">
+                <div class="col-12 align-content-center" id="testimonials">
+                    <h2 class="text-header text-center pb-2 pt-4">Testimonials</h2>
+                    <ul class="px-5">
+                        <li class="text-primary">
+                            <p>
+                                "At the end of working on Blacksite Theta, the project tech lead and I were reflecting
+                                on how the project had gone. We both agreed that we wouldn’t have been able to complete
+                                the project without Lucas. Right from the beginning, Lucas took charge of the
+                                physics-based movement system for the player.
+                            </p>
+                            <p>
+                                This was easily the most challenging system to program in the game, and Lucas dedicated
+                                himself to working through all various twists and turns that come with such an endeavor.
+                                This alone would have made Lucas one of the most valuable members of the team. In
+                                addition to this, whenever he wasn’t working on the movement system, he was quick to
+                                help out with other areas of the project including helping team members with less
+                                experience when they ran into trouble.
+                            </p>
+                            <p>
+                                I would be more than happy to have Lucas on any team I worked on in the future."
+                            </p>
+                            <p class="text-indent">- <strong>Cory Fritsch - Gameplay Engineer</strong></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row border-3 border-top">
+                <div class="col-10 offset-1 align-content-center" id="images">
+                    <h2 class="text-header text-center pb-2 pt-4">Images</h2>
+                    <img src="../Images/Blacksite-Theta/Grasp.png"
+                         alt="Use of grasp ability to pull a box towards the player" class="my-2">
+                    <img src="../Images/Blacksite-Theta/Smash.png"
+                         alt="Use of smash ability to smash wooden crates and clear a path" class="my-2">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-primary justify-content-center" id="Footer">
+
+</div>
+</body>
+</html>

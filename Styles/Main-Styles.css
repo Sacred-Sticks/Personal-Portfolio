@@ -8,6 +8,11 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 a:hover {
     color: #74b9f6 !important;
 }
@@ -75,4 +80,3 @@ a:hover {
 .height-95 {
     height: 95%;
 }
-
