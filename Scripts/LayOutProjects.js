@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const showcaseProjectsRoot = document.getElementById("Showcase-Projects");
     const professionalProjectsRoot = document.getElementById("Professional-Projects");
     const personalProjectsRoot = document.getElementById("Personal-Projects");
-    const gameJamProjectsRoot = document.getElementById("Short-Term-Projects");
+    const shortTermProjectsRoot = document.getElementById("Short-Term-Projects");
 
     fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/ShowcaseProjects.json")
         .then(response => response.json())
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/ShortTermProjects.json")
         .then(response => response.json())
         .then(projects =>
-            projects.forEach(project => AddProject(gameJamProjectsRoot, project)));
+            projects.forEach(project => AddProject(shortTermProjectsRoot, project)));
 });
 
 document.querySelectorAll('a[data-scroll-to]').forEach(function(anchor) {
