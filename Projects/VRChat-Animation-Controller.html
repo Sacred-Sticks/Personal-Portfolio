@@ -22,23 +22,22 @@
         <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
         <div class="col-md-6 text-primary border border-2 border-primary" id="Project-Overview">
             <div class="row border-bottom">
-                
-            <h4 class="text-secondary text-center mt-3">Brief Description</h4>
-            <p class="text-indent text-primary">
-                The animation controller was created because I played quite a lot of the video game VRChat with a custom
-                avatar, specifically in a Spider-Man web swinging themed world. Many players used full body tracking to
-                recreate iconic poses while swinging around the world, but due to my disability, full body tracking
-                would just showcase that I'm sitting in a chair. I wanted a way around that, so I created an animation
-                controller for my avatar that utilized parameters provided by VRChat to play animations midair and mimic
-                full body motion capture through handmade animations.
-            </p>
-            <div class="border-top border-bottom mt-4 mb-4"></div>
-            <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
-            <p class="text-indent text-primary">
-                I created this system from scratch in the Unity Editor with the project template created for VRChat
-                avatar creation. I got my character model online, but I did personally retexture it as well as produce
-                the animations shown in the showcase images.
-            </p>
+                <h4 class="text-secondary text-center mt-3">Brief Description</h4>
+                <p class="text-indent text-primary">
+                    The animation controller was created because I played quite a lot of the video game VRChat with a
+                    custom avatar, specifically in a Spider-Man web swinging themed world. Many players used full body
+                    tracking to recreate iconic poses while swinging around the world, but due to my disability, full
+                    body tracking would just showcase that I'm sitting in a chair. I wanted a way around that, so I
+                    created an animation controller for my avatar that utilized parameters provided by VRChat to play
+                    animations midair and mimic full body motion capture through handmade animations.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <p class="text-indent text-primary">
+                    I created this system from scratch in the Unity Editor with the project template created for VRChat
+                    avatar creation. I got my character model online, but I did personally retexture it as well as
+                    produce the animations shown in the showcase images.
+                </p>
             </div>
             <div class="row border-top border-2">
                 <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -104,17 +103,14 @@
                 <ol>
                     <li class="text-primary">
                         This was the first time I really wanted to explore creating my own character model, but I have
-                        very
-                        little experience with 3D modelling. I've always been able to model basic shapes and items, but
-                        never anything nearly as complex as a humanoid figure. While the texturing was fairly easy, the
-                        animations were my biggest struggle, as I had never really created animations with the intention
-                        of
-                        actually using them in a project.
+                        very little experience with 3D modelling. I've always been able to model basic shapes and items,
+                        but never anything nearly as complex as a humanoid figure. While the texturing was fairly easy,
+                        the animations were my biggest struggle, as I had never really created animations with the
+                        intention of actually using them in a project.
                     </li>
                     <li class="text-primary">
                         I was unable to utilize new parameters in the Unity Animator, as I was restricted to the scripts
-                        and
-                        tools provided by the VRChat developers. These restrictions at the time of development were
+                        and tools provided by the VRChat developers. These restrictions at the time of development were
                         including but not limited to the velocity of the player in the x, y, and z global axis or the
                         current hand pose on each hand.
                     </li>
@@ -124,40 +120,28 @@
                 <ol>
                     <li class="text-primary">
                         For the actual character model, I found a nice one online that seemed quite close to a model
-                        from
-                        the Spider-Man: Miles Morales game that I liked so I downloaded it, I knew that I couldn't do it
-                        myself so I outsourced. From there, I opened it in blender and cleaned it up. There were many
-                        bones
-                        that I would not need or other bones that I would need to add or connect because the mask was a
-                        separate mesh. Once the mesh was taken care of, I got to texturing it using blender's texture
-                        node
-                        system. My animation work could definitely be improved, but it was never the featured part of
-                        this
-                        project. That's why when I published the package publicly, I didn't include the animations, I
-                        wanted
-                        to see others creating their own animations.
+                        from the Spider-Man: Miles Morales game that I liked so I downloaded it, I knew that I couldn't
+                        do it myself so I outsourced. From there, I opened it in blender and cleaned it up. There were
+                        many bones that I would not need or other bones that I would need to add or connect because the
+                        mask was a separate mesh. Once the mesh was taken care of, I got to texturing it using blender's
+                        texture node system. My animation work could definitely be improved, but it was never the
+                        featured part of this project. That's why when I published the package publicly, I didn't
+                        include the animations, I wanted to see others creating their own animations.
                     </li>
                     <li class=" text-primary">
                         Working within the limitations of the VRChat system was initially agrivating as I knew it would
-                        be
-                        easy to implement the custom animations if I were able to add my own custom classes to control
-                        animations onto the avatar but their system rightfully prevents that. After about a week of
-                        working
-                        within the restrictions, I had found the solution I was looking for. I created a custom
-                        animation
-                        state that the player can activate or deactivate in their hand menu. This state would not play
-                        any
-                        animations directly, but it would send the player into an entirely separate animation sub-tree
-                        set
-                        up for web-swinging animations. This way, players would only have swinging animations on if they
-                        wanted them, without needed them on in every world. When it was on, players could control the
-                        animations even further with their hand pose so that if the hand is in a fist, for example, the
-                        full
-                        body animation would be in pose X but if the hands were open the animation would play pose Y
-                        instead. I also used y velocity to determine which animation to play, this way players who are
-                        moving downward quickly can play a diving animation but when they go upwards they'll be playing
-                        a
-                        swinging animation.
+                        be easy to implement the custom animations if I were able to add my own custom classes to
+                        control animations onto the avatar but their system rightfully prevents that. After about a week
+                        of working within the restrictions, I had found the solution I was looking for. I created a
+                        custom animation state that the player can activate or deactivate in their hand menu. This state
+                        would not play any animations directly, but it would send the player into an entirely separate
+                        animation sub-tree set up for web-swinging animations. This way, players would only have
+                        swinging animations on if they wanted them, without needed them on in every world. When it was
+                        on, players could control the animations even further with their hand pose so that if the hand
+                        is in a fist, for example, the full body animation would be in pose X but if the hands were open
+                        the animation would play pose Y instead. I also used y velocity to determine which animation to
+                        play, this way players who are moving downward quickly can play a diving animation but when they
+                        go upwards they'll be playing a swinging animation.
                     </li>
                 </ol>
             </div>
