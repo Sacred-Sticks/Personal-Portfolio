@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kickstarter Package</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Main-Styles.css">
+</head>
+<body>
+<div class="row bg-secondary text-center py-3 fixed-top" id="navbar">
+    <div class="col-6 col-md-2 offset-3 offset-md-1"><h1><a href="../index.html#header">Lucas Ackman</a></h1></div>
+</div>
+<div class="py-4"></div>
+<div class="row text-primary justify-content-center border-bottom border-4 d-none d-sm-block">
+    <img src="../Images/Kickstarter/Banner.png" alt="Template Banner">
+</div>
+<div class="d-md-none my-4">x.x</div>
+<div class="container border-2 border-left border-right border-bottom border-primary">
+    <div class="row justify-content-center">
+        <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+        <div class="col-md-6 text-primary border border-2 border-primary" id="Project-Overview">
+            <div class="row">
+                <h4 class="text-secondary text-center mt-3">Brief Description</h4>
+                <p class="text-indent text-primary">
+                    This project initially began as simply deciding to explore reusable code, but over time it developed
+                    into a package of code produced with the intention of making it as reusable as possible. It contains
+                    code for event based inputs using the Unity Event System package, UI using the UI Toolkit, data
+                    serialization to external files for saving and loading, game events through an event manager as well
+                    as scriptable object event busses, animation controls, as well as scriptable object variables to
+                    make decoupling easier for some systems.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <p class="text-indent text-primary">
+                    I created this package over the course of about six months using the Unity Game Engine as my
+                    starting point. The entire package is created by my own work, though I did outsource help for custom
+                    editors from Stack Overflow as I'm unfamiliar with programming custom unity editors. There are
+                    certainly aspects of the package that I consider much higher quality than other sections. However,
+                    there are some, such as the inputs section that I consider top quality of my work.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6 text-primary border border-2 border-primary">
+            <div class="row border px-5">
+                <h4 class="text-secondary text-center mt-3">Challenges Faced</h4>
+                <ol>
+                    <li class="text-primary">
+                        My biggest problem was working with some of the components of the Unity Engine I was previously
+                        unfamiliar with. I had experience with the new Unity Input system package but never had explored
+                        programming the input actions manually instead of using an action map. Learning curves aren't
+                        necessarily the death of a project though, and they certainly didn't stop me.
+                    </li>
+                </ol>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Lessons Learned</h4>
+                <ol>
+                    <li class="text-primary">
+                        I found that my ideal solution was to look at the documentation. Through that, I could
+                        understand how the team at Unity intend for their systems to work, which let me build on top of
+                        it with my own. When I was adding multiplayer inputs for example, I found that I needed to
+                        disambiguate between the controllers so that the computer knows when inputs are changing such as
+                        a joystick adjusting it's direction without directly stopping. It did take me about a week to
+                        find the documentation for this, but when it was implemented the multiplayer inputs worked
+                        flawlessly.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-primary justify-content-center" id="Footer">
+
+</div>
+</body>
+</html>
