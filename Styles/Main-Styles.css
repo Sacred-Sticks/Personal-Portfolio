@@ -13,6 +13,11 @@ img {
     height: auto;
 }
 
+input {
+    width: 100%;
+    height: auto;
+}
+
 a:hover {
     color: #74b9f6 !important;
 }
