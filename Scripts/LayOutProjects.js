@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const showcaseProjectsRoot = document.getElementById("Showcase-Projects");
     const professionalProjectsRoot = document.getElementById("Professional-Projects");
     const personalProjectsRoot = document.getElementById("Personal-Projects");
-    const gameJamProjectsRoot = document.getElementById("Game-Jam-Projects");
-    const classProjectsRoot = document.getElementById("Class-Projects")
+    const gameJamProjectsRoot = document.getElementById("Short-Term-Projects");
 
     fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/ShowcaseProjects.json")
         .then(response => response.json())
@@ -17,14 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(projects =>
             projects.forEach(project => AddProject(personalProjectsRoot, project)));
-    fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/GameJamProjects.json")
+    fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/ShortTermProjects.json")
         .then(response => response.json())
         .then(projects =>
             projects.forEach(project => AddProject(gameJamProjectsRoot, project)));
-    fetch("https://raw.githubusercontent.com/Sacred-Sticks/Portfolio-Project-Lists/main/ClassWorkProjects.json")
-        .then(response => response.json())
-        .then(projects =>
-            projects.forEach(project => AddProject(classProjectsRoot, project)));
 });
 
 document.querySelectorAll('a[data-scroll-to]').forEach(function(anchor) {
