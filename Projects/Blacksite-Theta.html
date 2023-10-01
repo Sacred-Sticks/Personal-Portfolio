@@ -17,67 +17,70 @@
     <img src="../Images/Blacksite-Theta/Banner.png" alt="Template Banner">
 </div>
 <div class="d-md-none my-4">x.x</div>
-<div class="container border-2 border-left border-right border-bottom border-primary">
+<div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-6 text-primary border border-2 border-primary" id="Project-Overview">
-            <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
-            <h4 class="text-secondary text-center">Brief Description</h4>
-            <p class="text-indent text-primary">
-                Blacksite Theta is a University of Wisconsin-Whitewater capstone project that I was lucky enough to be
-                able to work on. The game used an alien creature imbedded into your characters arms to give you control
-                over unique abilities based around growth and retraction of your arms, super strength, and electricity.
-                You had to navigate and survive through a series of puzzles to reach the ending of the game.
-            </p>
-            <div class="border-top border-bottom mt-4 mb-4"></div>
-            <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
-            <p class="text-indent text-primary">
-                I was working primarily in the tech team of the Blacksite Theta, though I also did work in the design of
-                the project. A majority of my time during development was spent on the character controller, as it
-                needed to work well alone while also being compatible with the movement abilities that player had. I was
-                also contributing to the abilities themselves, as I had fully developed the growth and retraction
-                abilities, the strength rebound and the shattering of the smashed crates, and heavily refactored the
-                electric abilities to work with larger systems.
-            </p>
-            <div class="border-top border-bottom mt-4 mb-4"></div>
-            <h4 class="text-secondary text-center">Challenges Faced</h4>
-            <ol>
-                <li class="text-primary">
-                    There were many challenges during development, some of which were quick to solve but the ones that
-                    stand out were far larger. We needed to allow for abilities to cancel the character movement when
-                    they controllled the movement with the Retraction, Rebound, and Dash abilities.
-                </li>
-                <li class="text-primary">
-                    Another large problem was the animations of the player, as we wanted the arms to move specifically
-                    to the place where they were being used, such as actually hitting the crates that are being smashed.
-                    Lastly, grounding animations and airborne animations were tricky, as my controller wasn't created
-                    with ramped surfaces being considered as far as animations were considered. This led to the airborne
-                    animation triggerring falsely when walking up or down a ramped surface. Unfortunately, I was unable
-                    to perfect the ramp issue when development finished.
-                </li>
-            </ol>
-            <div class="border-top border-bottom mt-4 mb-4"></div>
-            <h4 class="text-secondary text-center">Lessons Learned</h4>
-            <ol>
-                <li class="text-primary">
-                    Luckily, I was learning the SOLID design principles in another class during this project, which made
-                    it possible for me to use those lessons throughout development. I learned how important it is to
-                    decouple code to keep systems separate and allow for expansion. Originally, we only had two player
-                    powersets in mind, the growth and strength powers, and later added the electric abilities. I learned
-                    how to develop my character controller to allow for more abilities to be added without needing to
-                    modify the code of it for each movement ability using events.
-                </li>
-                <li class=" text-primary">
-                    I also had been learning the basics of inverse kinematics for another class working on a virtual
-                    reality full body avatar. That knowledge made it easy for me to implement the arm ability animations
-                    in such a way to where they would be aimed correctly at the point of interaction.
-                </li>
-            </ol>
+        <div class="col-md-6 text-primary" id="Project-Overview">
+            <div class="row border border-3 border-primary px-3">
+                <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+                <h4 class="text-secondary text-center">Brief Description</h4>
+                <p class="text-indent text-primary">
+                    Blacksite Theta is a University of Wisconsin-Whitewater capstone project that I was lucky enough to
+                    be able to work on. The game used an alien creature imbedded into your characters arms to give you
+                    control over unique abilities based around growth and retraction of your arms, super strength, and
+                    electricity. You had to navigate and survive through a series of puzzles to reach the ending of the
+                    game.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <p class="text-indent text-primary">
+                    I was working primarily in the tech team of the Blacksite Theta, though I also did work in the
+                    design of the project. A majority of my time during development was spent on the character
+                    controller, as it needed to work well alone while also being compatible with the movement abilities
+                    that player had. I was also contributing to the abilities themselves, as I had fully developed the
+                    growth and retraction abilities, the strength rebound and the shattering of the smashed crates, and
+                    heavily refactored the electric abilities to work with larger systems.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Challenges Faced</h4>
+                <ol>
+                    <li class="text-primary">
+                        There were many challenges during development, some of which were quick to solve but the ones
+                        that stand out were far larger. We needed to allow for abilities to cancel the character
+                        movement when they controllled the movement with the Retraction, Rebound, and Dash abilities.
+                    </li>
+                    <li class="text-primary">
+                        Another large problem was the animations of the player, as we wanted the arms to move
+                        specifically to the place where they were being used, such as actually hitting the crates that
+                        are being smashed. Lastly, grounding animations and airborne animations were tricky, as my
+                        controller wasn't created with ramped surfaces being considered as far as animations were
+                        considered. This led to the airborne animation triggerring falsely when walking up or down a
+                        ramped surface. Unfortunately, I was unable to perfect the ramp issue when development finished.
+                    </li>
+                </ol>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Lessons Learned</h4>
+                <ol>
+                    <li class="text-primary">
+                        Luckily, I was learning the SOLID design principles in another class during this project, which
+                        made it possible for me to use those lessons throughout development. I learned how important it
+                        is to decouple code to keep systems separate and allow for expansion. Originally, we only had
+                        two player powersets in mind, the growth and strength powers, and later added the electric
+                        abilities. I learned how to develop my character controller to allow for more abilities to be
+                        added without needing to modify the code of it for each movement ability using events.
+                    </li>
+                    <li class=" text-primary">
+                        I also had been learning the basics of inverse kinematics for another class working on a virtual
+                        reality full body avatar. That knowledge made it easy for me to implement the arm ability
+                        animations in such a way to where they would be aimed correctly at the point of interaction.
+                    </li>
+                </ol>
+            </div>
         </div>
-        <div class="col-md-6 text-primary border border-2 border-primary">
-            <div class="row border-3 border-bottom">
+        <div class="col-md-6 text-primary">
+            <div class="row border border-3 border-primary">
                 <div class="col-12 align-content-center border-bottom border-primary" id="testimonials">
                     <h2 class="text-header text-center pb-2 pt-4">Testimonials</h2>
-                    <ul class="px-5">
+                    <ul class="px-3">
                         <li class="text-primary">
                             <p>
                                 "At the end of working on Blacksite Theta, the project tech lead and I were reflecting
@@ -98,47 +101,74 @@
                             </p>
                             <p class="text-indent">- <strong>Cory Fritsch - Gameplay & Systems Engineer</strong></p>
                         </li>
+                        <li>
+                            <p>
+                                "Throughout the creation of Blacksite Theta, Lucas played a central role in its
+                                development. His expertise with the Unity Engine spanned a wide range of
+                                responsibilities including design, system architecture, animation controller management,
+                                quality assurance testing, and much more.
+                            </p>
+                            <p>
+                                One of Lucas’s primary responsibilities was the player controller, which demanded unique
+                                and intricate physics support. This was a challenge he adeptly and successfully
+                                accomplished. Overall, Lucas was able to consistently offer support to various aspects
+                                of the project throughout development. Thanks to his dedication, persistence, and
+                                determination, we as a team were able to complete the project in the designated
+                                timeline.
+                            </p>
+                            <p>
+                                I’ve also had the pleasure of collaborating with Lucas on numerous projects, ranging
+                                from large teams to smaller, two-person teams with each project being an overall great
+                                experience.
+                            </p>
+                            <p>- <strong>Dayne Farris - Technical Lead</strong></p>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="row border-top">
+            <div class="row border-3 border" id="images">
                 <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <h2 class="text-header text-center pb-2 pt-4">Images</h2>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                     </div>
+
+                    <!-- The slideshow/carousel -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../Images/Blacksite-Theta/Grasp.png" class="my-2 d-block"
-                                 alt="Use of grasp ability to pull a box towards the player">
+                                 alt="Level One of 'A Statue of Time'">
                             <div class="carousel-caption bg-tertiary rounded-pill">
                                 <h3>Grasp Ability</h3>
-                                <p>Pull Metal Boxes with the Reach of the Sun</p>
+                                <p>Pull with the reach of a Black Hole</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="../Images/Blacksite-Theta/Smash.png" class="my-2 d-block"
-                                 alt="Use of smash ability to smash wooden crates and clear a path">
+                                 alt="Level Two of 'A Statue of Time'">
                             <div class="carousel-caption bg-tertiary rounded-pill">
                                 <h3>Smash Ability</h3>
-                                <p>Crush Wooden Boxes with the Strength of Hercules</p>
+                                <p>Smash wooden crates with the strength of Hercules</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="../Images/Blacksite-Theta/Dash.png" class="my-2 d-block"
-                                 alt="Use of dash ability to dash forward rapidly">
+                                 alt="Level Two Solution of 'A Statue of Time'">
                             <div class="carousel-caption bg-tertiary rounded-pill">
                                 <h3>Dash Ability</h3>
-                                <p>Rapidly Dash Forward with the speed of Electricity</p>
+                                <p>Dash forward with the speed of Electricity</p>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel"
+                            data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#image-carousel"
+                            data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
@@ -147,7 +177,7 @@
     </div>
 </div>
 <div class="row text-primary justify-content-center" id="Footer">
-    
+
 </div>
 </body>
 </html>

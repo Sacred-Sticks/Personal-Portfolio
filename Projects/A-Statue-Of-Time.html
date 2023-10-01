@@ -14,72 +14,76 @@
 </div>
 <div class="py-4"></div>
 <div class="row text-primary justify-content-center border-bottom border-4 d-none d-sm-block">
-    <img src="../Images/Blacksite-Theta/Banner.png" alt="Template Banner">
+    <img src="../Images/A-Statue-Of-Time/Banner.png" alt="Template Banner">
 </div>
 <div class="d-md-none my-4">x.x</div>
-<div class="container border-2 border-left border-right border-bottom border-primary">
+<div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-6 text-primary border border-2 border-primary" id="Project-Overview">
-            <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
-            <h4 class="text-secondary text-center">Brief Description</h4>
-            <p class="text-indent text-primary">
-                A Statue of Time was the first project that I had programmed entirely on my own. It was a class project
-                that lasted about half the semester. You control a character that was cursed to turn to stone and view
-                his statues but he uses this curse to escape the tower he is trapped in. By turning to stone, your
-                statues can press buttons, weigh down pulleys, and give access to difficult to reach locations.
-            </p>
-            <div class="border-top border-bottom mt-4 mb-4"></div>
-            <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
-            <p class="text-indent text-primary">
-                I provided all of the programming for A Statue of Time using the Unity Engine and the pre-existing Unity
-                components. This project was created with a team of 2, where I initially served as the programmer and my
-                partner would develop the art, but we realized we needed someone to make levels. I took a major role in
-                level development and developed thirteen of the total levels.
-            </p>
-            <div class="border-top border-bottom mt-4 mb-4"></div>
-            <h4 class="text-secondary text-center">Challenges Faced</h4>
-            <ol>
-                <li class="text-primary">
-                    One of the biggest problems was level development. I had never been able to creatively design levels
-                    that could make a player reconsider their abilities and do something new. I needed to find a way to
-                    make players think about their ability options in new ways that they perhaps hadn't considered
-                    prior.
-                </li>
-                <li class="text-primary">
-                    On the tech side, I had a major problem that was unable to be solved during development time, but if
-                    I were to rework it today I would have the solution. If you were to walk on a pulley and walk over
-                    the edge of it while barely staying on it, the pulley would start pulling down for no reason. I was
-                    able to slow it down and make it less noticable, but this project was before I learned any of the
-                    Unity Physics Engine so I wasn't using any joints which is what caused the bug.
-                </li>
-            </ol>
-            <div class="border-top border-bottom mt-4 mb-4"></div>
-            <h4 class="text-secondary text-center">Lessons Learned</h4>
-            <ol>
-                <li class="text-primary">
-                    When working on the level design, I thought about what I could do to create unique use cases for the
-                    abilitites. One of the levels I'm most proud of involves a button that opens the exit but you aren't
-                    able to reach the button without holding another button down. However, you only have one statue to
-                    use in this level, which makes the solution quite a sparking moment for the player when they
-                    discover it. To come up with this, I thought about the mechanics and considered how they might be
-                    able to interact with each other, which lead to the piston interacting with a statue which lead to
-                    the solution for this level.
-                </li>
-                <li class=" text-primary">
-                    Were I to create this game now, I would use a configurable joint for the pulleys isntead of manually
-                    controlling the position through a direct modification of the transform values. Using the joint
-                    would solve this because I would lock all the rotations and positions except for the y position.
-                    Then, I would simply modify the maxDistance value based on the mass of the rigidbodies on top of it,
-                    and I would configure the settings on the joint to prevent rapid movement, making all movement be at
-                    the same speed.
-                </li>
-            </ol>
+        <div class="col-md-6 text-primary" id="Project-Overview">
+            <div class="row border border-3 border-primary px-3">
+                <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+                <h4 class="text-secondary text-center">Brief Description</h4>
+                <p class="text-indent text-primary">
+                    A Statue of Time was the first project that I had programmed entirely on my own. It was a class
+                    project that lasted about half the semester. You control a character that was cursed to turn to
+                    stone and view his statues but he uses this curse to escape the tower he is trapped in. By turning
+                    to stone, your statues can press buttons, weigh down pulleys, and give access to difficult to reach
+                    locations.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <p class="text-indent text-primary">
+                    I provided all of the programming for A Statue of Time using the Unity Engine and the pre-existing
+                    Unity components. This project was created with a team of 2, where I initially served as the
+                    programmer and my partner would develop the art, but we realized we needed someone to make levels. I
+                    took a major role in level development and developed thirteen of the total levels.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Challenges Faced</h4>
+                <ol>
+                    <li class="text-primary">
+                        One of the biggest problems was level development. I had never been able to creatively design
+                        levels that could make a player reconsider their abilities and do something new. I needed to
+                        find a way to make players think about their ability options in new ways that they perhaps
+                        hadn't considered prior.
+                    </li>
+                    <li class="text-primary">
+                        On the tech side, I had a major problem that was unable to be solved during development time,
+                        but if I were to rework it today I would have the solution. If you were to walk on a pulley and
+                        walk over the edge of it while barely staying on it, the pulley would start pulling down for no
+                        reason. I was able to slow it down and make it less noticable, but this project was before I
+                        learned any of the Unity Physics Engine so I wasn't using any joints which is what caused the
+                        bug.
+                    </li>
+                </ol>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Lessons Learned</h4>
+                <ol>
+                    <li class="text-primary">
+                        When working on the level design, I thought about what I could do to create unique use cases for
+                        the abilitites. One of the levels I'm most proud of involves a button that opens the exit but
+                        you aren't able to reach the button without holding another button down. However, you only have
+                        one statue to use in this level, which makes the solution quite a sparking moment for the player
+                        when they discover it. To come up with this, I thought about the mechanics and considered how
+                        they might be able to interact with each other, which lead to the piston interacting with a
+                        statue which lead to the solution for this level.
+                    </li>
+                    <li class=" text-primary">
+                        Were I to create this game now, I would use a configurable joint for the pulleys isntead of
+                        manually controlling the position through a direct modification of the transform values. Using
+                        the joint would solve this because I would lock all the rotations and positions except for the y
+                        position. Then, I would simply modify the maxDistance value based on the mass of the rigidbodies
+                        on top of it, and I would configure the settings on the joint to prevent rapid movement, making
+                        all movement be at the same speed.
+                    </li>
+                </ol>
+            </div>
         </div>
-        <div class="col-md-6 text-primary border border-2 border-primary">
-            <div class="row border-3 border-bottom">
+        <div class="col-md-6 text-primary">
+            <div class="row border border-3 border-primary">
                 <div class="col-12 align-content-center border-bottom border-primary" id="testimonials">
                     <h2 class="text-header text-center pb-2 pt-4">Testimonials</h2>
-                    <ul class="px-5">
+                    <ul class="px-3">
                         <li class="text-primary">
                             <p>
                                 "At the end of working on Blacksite Theta, the project tech lead and I were reflecting
@@ -103,9 +107,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="row border-3 border-top" id="images">
+            <div class="row border-3 border" id="images">
                 <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <h2 class="text-header text-center pb-2 pt-4">Images</h2>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>

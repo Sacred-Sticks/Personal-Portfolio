@@ -17,12 +17,14 @@
     <img src="../Images/Mirage/Banner.png" alt="Template Banner">
 </div>
 <div class="d-md-none my-4">x.x</div>
-<div class="container border-2 border-left border-right border-bottom border-primary">
-    <div class="row justify-content-center">
+<div class="container">
+    <div class="row border border-3 border-primary px-3">
         <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
-        <div class="col-md-6 text-primary border border-2 border-primary" id="Project-Overview">
-            <div class="row border-bottom">
-                <h4 class="text-secondary text-center mt-3">Brief Description</h4>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-primary" id="Project-Overview">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Brief Description</h4>
                 <p class="text-indent text-primary">
                     Created for the Global Game Jam 2022, themed under Duality. The concept of the game is that your
                     ship captured an alien that can warp perception of nearby individuals and it escaped. You can't
@@ -39,51 +41,54 @@
                     player with a NavMesh but the attack was more complex because we wanted a jumpscare.
                 </p>
             </div>
-            <div class="row border-top border-2">
+            <div class="row border border-3 border-primary px-3 py-3">
                 <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <h2 class="text-header text-center pb-2 pt-4">Images</h2>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                     </div>
+
+                    <!-- The slideshow/carousel -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../Images/Mirage/Scanning.png" class="my-2 d-block"
-                                 alt="Use of grasp ability to pull a box towards the player">
+                                 alt="Level One of 'A Statue of Time'">
                             <div class="carousel-caption bg-tertiary rounded-pill">
                                 <h3>The Initial Scan</h3>
-                                <p>Playing the Game equires a Forced Scan to Begin</p>
+                                <p>Playing the game requires a forced scan to begin</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="../Images/Mirage/thumbnail.png" class="my-2 d-block"
-                                 alt="Use of grasp ability to pull a box towards the player">
+                                 alt="Level Two of 'A Statue of Time'">
                             <div class="carousel-caption bg-tertiary rounded-pill">
                                 <h3>The Jump Scare</h3>
-                                <p>When the Player Loses, They'll Know It</p>
+                                <p>When the player loses, they'll know it</p>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#image-carousel"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
                     </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#image-carousel"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 text-primary border border-2 border-primary">
-            <div class="row border px-5">
-                <h4 class="text-secondary text-center mt-3">Challenges Faced</h4>
+        <div class="col-md-6 text-primary">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Challenges Faced</h4>
                 <ol>
                     <li class="text-primary">
                         We were troubled with how we could acheive the dual perspective of the ship scanning mechanic.
                     </li>
                     <li class="text-primary">
-                        Development for the AI of the beast was tricky to nail down, as we wanted to implement a 
+                        Development for the AI of the beast was tricky to nail down, as we wanted to implement a
                         jumpscare and we also understood that some players may not understand the scanning mechanic.
                     </li>
                 </ol>
@@ -98,7 +103,7 @@
                         shader for the render texture that passed accross the screen and we had the effect we desired,
                         though at the cost of lag with multiple cameras rendering full resolution at the same time.
                     </li>
-                    <li class="text-primary">
+                    <li class=" text-primary">
                         To ensure that players understood the scanning mechanic, we locked all controls until after the
                         player commits the first scan, where they would be looking directly at the beast. This would let
                         them know that they can't trust their eyes for the details about the ship around them. From
