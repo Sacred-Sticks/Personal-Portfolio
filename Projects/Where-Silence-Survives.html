@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Silence Survives</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Main-Styles.css">
+</head>
+<body>
+<div class="row bg-secondary text-center py-3 fixed-top" id="navbar">
+    <div class="col-6 col-md-2 offset-3 offset-md-1"><h1><a href="../index.html#header">Lucas Ackman</a></h1></div>
+</div>
+<div class="py-4"></div>
+<div class="row text-primary justify-content-center border-bottom border-4 d-none d-sm-block">
+    <img src="../Images/Where-Silence-Survives/Banner.png" alt="Template Banner">
+</div>
+<div class="d-md-none my-4">x.x</div>
+<div class="container">
+    <div class="row border border-3 border-primary px-3">
+        <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-primary" id="Project-Overview">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Brief Description</h4>
+                <p class="text-indent text-primary">
+                    Where Silence Survives is my first virtual reality project that came to completion. It was created
+                    during a game jam in which we almost entirely ignored the jam's theme (Single Use). I came into this
+                    jam with a gameplay loop concept and forced the theme of the jam to work with it. I had just been
+                    watching Daredevil and was fascinated with the concept behind him and wanted to create a virtual
+                    reality game matching it, so that's what we did. Come into this game where you can perceive things
+                    only when they or something near it makes sound and fight Medusas to stay alive.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <p class="text-indent text-primary">
+                <ul>
+                    <li>
+                        In this project I was in charge of the blindness mechanic. I had experimented with it before and
+                        found that it's possible to create it by removing all the lights in the scene and instantiating
+                        them where and when something makes a sound. We could then modify the position and luminosity
+                        strength of the object to get the effect we were looking for.
+                    </li>
+                    <li>
+                        I also worked with the AI of the enemies, creating a pathfollowing system in which they each had
+                        an active path and a set of combat points. They would by default maneuver around the active path
+                        in a clean route predefined by us, but when a player gets discovered by the AI, either by
+                        attacking the AI from behind or by walking in front of them, they move towards the most nearby
+                        combat point.
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6 text-primary">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Challenges Faced</h4>
+                <ol>
+                    <li class="text-primary">
+                        Throughout development there weren't that many problems except for what I thought was joystick
+                        drift on my controller. The lights would be entirely out due to a lack of noise so I would
+                        activate the finger snapping and find that I had moved since the last finger snap. However,
+                        after releasing the game at the end of the game jam, many comments let me know that this issue
+                        was not joystick drift but rather a physics bug.
+                    </li>
+                    <li class="text-primary">
+                        We had issues with heights when the game was released as well. Essentially, when a player would
+                        walk down stairs, if they were actively holding a weapon they wouldn't lower with the floor
+                        while going down the stairs.
+                    </li>
+                </ol>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Lessons Learned</h4>
+                <ol>
+                    <li class="text-primary">
+                        The physics drift problem was quite unique, as I was struggling to debug it due to the low
+                        lights. Because there were no directional lights in the scene to make it visible to see what was
+                        going on, it was difficult to see when the issue was happenning. Because of this, I added a
+                        directional light to let me see better, and I couldn't see anything bad happening at all. I was
+                        suddenly having no drift. I had to think about it for an hour or so until I tried turning the
+                        luminosity on the light to 0, but still leaving it in the scene. Suddenly, the physics drift
+                        issue was gone.
+                    </li>
+                    <li class=" text-primary">
+                        We had used a package in this virtual reality project called Autohand. This packaged provided
+                        hand and finger functionality for grabbing things, and also the character controller, so our
+                        issue must have been there. I looked at the components being used and realized we left a stabber
+                        on the swords. The stabber would allow for users to stab into walls and climb upwards similar to
+                        rock climbing. Leaving this on the swords meant that if you held a sword you wouldn't drop. From
+                        this, I learned to only add components when I have the feature fully implemented, as later in
+                        development we decided to not include this feature.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-primary justify-content-center" id="Footer">
+
+</div>
+</body>
+</html>
