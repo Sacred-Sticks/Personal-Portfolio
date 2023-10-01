@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spellcaster-Retribution</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Main-Styles.css">
+</head>
+<body>
+<div class="row bg-secondary text-center py-3 fixed-top" id="navbar">
+    <div class="col-6 col-md-2 offset-3 offset-md-1"><h1><a href="../index.html#header">Lucas Ackman</a></h1></div>
+</div>
+<div class="py-4"></div>
+<div class="row text-primary justify-content-center border-bottom border-4 d-none d-sm-block">
+    <img src="../Images/Spellcaster-Retribution/Banner.png" alt="Template Banner">
+</div>
+<div class="d-md-none my-4">x.x</div>
+<div class="container">
+    <div class="row border border-3 border-primary px-3">
+        <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-primary" id="Project-Overview">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Brief Description</h4>
+                <p class="text-indent text-primary">
+                    Spellcaster - Retribution is a game I created with 2 university friends during a game jam in which
+                    the theme was "two is better than one." We applied the theme through the use of magic, in which the
+                    player could cast two spells at a time, one with each hand, in this virtual reality rogue-lite game.
+                    To cast spells, a player would hold the primary button on their controller while moving their hand
+                    in a primary direction (up, down, left, or right) to select a spell, and then with a spell selected
+                    they could activate it with the trigger.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <p class="text-indent text-primary">
+                    For this game jam, I had prepared the barebones for a procedural dungeon generator over the previous
+                    3 weeks when not working on classwork with the intention of making a roguelite game. Due to this
+                    being the first time it was really used, most of my time was spent fixing the code in the
+                    generation. I was the only person in the team with experience working in virtual reality
+                    development, this meant working with my teammates and showing them some of the solutions I had found
+                    for some common issues I had previously encountered.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6 text-primary">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Challenges Faced</h4>
+                <ol>
+                    <li class="text-primary">
+                        The biggest challenge was the dungeon generator. In an ideal world, it would have worked right
+                        away but as one might expect, it never does. The challenges consisted of the tiled assets being
+                        placed in the wrong spots due to positional offsets, the walls requiring additional rotations,
+                        and z-fighting.
+                    </li>
+                    <li class="text-primary">
+                        My partner on the tech side was working far more on the actual gameplay while I was working on
+                        the dungeon generation and a few of the powers. He had an issue with the spell selection. He
+                        couldn't find a way to find the spell based specifically on the direction the hand moved
+                        relative to the player. In other words, he was working with global directions but needed local
+                        directions.
+                    </li>
+                </ol>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Lessons Learned</h4>
+                <ol>
+                    <li class="text-primary">
+                        The dungeon generator taught me that I can't build systems without assets and expect them to
+                        work flawlessly when I import assets to work with them. That's why the position and rotation
+                        needed fixing, I was using the default Unity cube which has a root at the center and no
+                        textures meanwhile the assets I got from the artist had a root at the bottom and textures only
+                        on the side that the player sees. I also learned that sometimes a creative artist can fix
+                        problems in engine, because I never got the chance to fix the z-fighting, the artist built the
+                        model to avoid it.
+                    </li>
+                    <li class=" text-primary">
+                        To solve the directions problem, I informed my teammate that we could take the forward euler
+                        angles from the camera and project it onto the y-plane. With this vector, we were able to
+                        calculate the local directions that the hands moved and assign the correct spell accordingly.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-primary justify-content-center" id="Footer">
+
+</div>
+</body>
+</html>
