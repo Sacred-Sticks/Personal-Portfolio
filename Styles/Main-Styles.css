@@ -18,6 +18,11 @@ input {
     height: auto;
 }
 
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 a:hover {
     color: #74b9f6 !important;
 }
