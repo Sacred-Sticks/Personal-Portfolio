@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Havoc</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Main-Styles.css">
+</head>
+<body>
+<div class="row bg-secondary text-center py-3 fixed-top" id="navbar">
+    <div class="col-6 col-md-2"><h3><a href="../index.html">Lucas Ackman</a></h3></div>
+    <div class="col-6 col-md-2 offset-md-8"><h3><a href="../ContactMe.html">Contact Me</a></h3></div>
+</div>
+<div class="py-4"></div>
+<div class="row text-primary justify-content-center border-bottom border-4 d-none d-sm-block">
+    <img src="../Images/Hybrid-Havoc/Banner.png" alt="Template Banner">
+</div>
+<div class="d-md-none my-4">x.x</div>
+<div class="container">
+    <div class="row border border-3 border-primary px-3">
+        <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-primary" id="Project-Overview">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Brief Description</h4>
+                <p class="text-indent text-primary">
+                    Hybrid Havoc was a game that I designed and pitched for my university capstone class, Media Arts &
+                    Game Design 488, Team Projects. Ultimately, the class did not select my pitch as the class project
+                    so when the next game jam came and the theme was "Over the Top" I thought it would be over the top
+                    to attempt the whole thing in 48 hours, with cuts of course.
+                </p>
+                <p class="text-indent text-primary">
+                    The gameplay is simple, the player and up to three friends will battle each other in a free for all,
+                    top down, local asymmetric multiplier. More in depth, players would have the opprotunity to mutate
+                    into a hybrid with a more powerful attack. To win the game, you need to survive as the hybrid for an
+                    extended period of time, but there can only be one at a time. Whenever the hybrid is killed, timers
+                    reset on all living players for their turn at becoming the hybrid. 
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <p class="text-indent text-primary">
+                    Hybrid Havoc was produced during a game jam. Due to my group not working out I had left it after 5
+                    hours, which had cut deeply into my 48 hour time frame. At that point, everyone was already grouped
+                    up so I needed to work on a solo project. I utilizd my Kickstarter package heavily to make
+                    production easier.
+                </p>
+                <p class="text-indent text-primary">
+                    Being in a solo project meant cutting many aspects of the original Team Projects pitch for Hybrid
+                    Havoc. The art was the biggest cut due to this limitation which is why the game doesn't have any
+                    animations and still uses primatives for the players, bullets, and walls. I've always developed with
+                    the mindset of making it functional first, and only worrying about making it looking pretty after I
+                    know it's fun which is why I only had time to model the floors of the game.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6 text-primary">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Challenges Faced</h4>
+                <ol>
+                    <li class="text-primary">
+                        Many issues that I faced in this project development were actually results of things I had
+                        originally overlooked in my Kickstarter package. For instance, I set up the package to allow
+                        disabling of input if a player dies, but that disabled the input for all players. Another issue
+                        was that the first player to become the hybrid would always have control of the hybrid.
+                    </li>
+                </ol>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Lessons Learned</h4>
+                <ol>
+                    <li class="text-primary">
+                        Fixing the inputs had two solutions, and when they are implemented together it solves any issues
+                        I was facing. The first solution was to include an UnsubscribeToInputAction() method in the
+                        input object. This would replace disabling the input, which was quite a large overlooked feature
+                        that I somehow didn't consider beforehand. The second solution was to add an interface to input
+                        receivers. This ensured that they each had the required methods to control and use inputs.
+                    </li>
+                    <li class=" text-primary">
+                        I began learning the SOLID design principles about a year or so before this game jam took place,
+                        and I was shocked when working that I had performed many of the principles automatically without
+                        needing to think to do it. For example, when I was working on the weapon, I started with an
+                        IWeapon interface containing an Attack() method. I built my combat system according to the Open
+                        Closed Principle without even thinking about it. The further into the project I got, the more
+                        design principles I had 'accidentally' used.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-primary justify-content-center" id="Footer">
+
+</div>
+</body>
+</html>
