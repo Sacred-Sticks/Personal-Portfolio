@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Might-Eez Workshop</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Main-Styles.css">
+</head>
+<body>
+<div class="row bg-secondary text-center py-3 fixed-top" id="navbar">
+    <div class="col-6 col-md-2"><h3><a href="../index.html">Lucas Ackman</a></h3></div>
+    <div class="col-6 col-md-2 offset-md-8"><h3><a href="../ContactMe.html">Contact Me</a></h3></div>
+</div>
+<div class="py-4"></div>
+<div class="row text-primary justify-content-center border-bottom border-4 d-none d-sm-block">
+    <img src="../Images/Might-Eez-Workshop/Banner.png" alt="Template Banner">
+</div>
+<div class="d-md-none my-4">x.x</div>
+<div class="container">
+    <div class="row border border-3 border-primary px-3">
+        <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-primary" id="Project-Overview">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Brief Description</h4>
+                <p class="text-indent text-primary">
+                    We really wanted a challenge on this project, so we went a bit high in scope for the brief six weeks
+                    of development. Embark on a journey as Johnny Toymaker as he tries to open a new toyshop, but is far
+                    busier than he had expected. Good luck balancing the time as you try to fulfill each order! Be
+                    careful though, if your order list fills all 8 slots and a new order comes in, the business is
+                    doomed to fail. If you fail to fill an order, it stays in a slot but can no longer be removed by
+                    filling it, so you need to keep up and work on your skills with multitasking to ensure that you can
+                    keep yourself afloat.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <p class="text-indent text-primary">
+                    On this project I was the programmer and technical engineer. I had planned out and implemented the
+                    higher structured systems such as the Toy Production. I used my skills in programming patterns as
+                    well as polymorphism to create my toy production factory. This was easily my most advanced system in
+                    this project, and my most prized work as a game developer through my career at the point of
+                    development.
+                </p>
+                <p class="text-indent text-primary">
+                    I also was implementing the UI systems to work with the orders and customers. I used the UI Toolkit
+                    to achieve this, as I find it easier to develop layered UI systems in the toolkit as compared to the
+                    legacy UI system in Unity. This was quite a time consuming process of refinement until I found a
+                    layout that worked nicely with the level design and showed all the necessary information regarding
+                    the elements of each toy.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6 text-primary">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Challenges Faced</h4>
+                <ol>
+                    <li class="text-primary">
+                        Initially the game was designed to have left click insert or remove a resource from a
+                        workstation, with the right click actually activating the workstation. However, when it came
+                        time to get play tests, we found that those controls were overcomplicated and unnecessary.
+                    </li>
+                    <li class="text-primary">
+                        I needed to design the system for producing toys with multiple steps and multiple stations being
+                        used. This took a lot of thought and research before I found a set of programming patterns that
+                        I could combine to create the functionality I was looking for.
+                    </li>
+                </ol>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Lessons Learned</h4>
+                <ol>
+                    <li class="text-primary">
+                        I was smart enough to really adhere to the SOLID design principles on this project, and so that
+                        meant that when it came to refactor the input management to only use one input instead of 2
+                        inputs being used 3 times (left click to insert a product, right click to activate the
+                        workstation, and left click again to remove it). I spent only about 30 minutes working on the
+                        refactor, which included the design process of considering how to solve the problem we were
+                        presented with.
+                    </li>
+                    <li class="text-primary">
+                        I knew immediately that I use polymorphism to format the toy structure. I had a base
+                        class Resource that everything inherits from and adds to. BaseMaterial adds a color, as do
+                        the others as needed. As for the structure of the workstations, I used the Factory and Command
+                        Patterns. Each workstation has a WorkstationType enum value on it which it sends to the Factory
+                        to get the appropriate command for what that workstation does. This made it easy to add new
+                        workstations later in development that weren't initially considered like the Trash Can or the
+                        Sales Register without needing to modify the workstation class at all.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-primary justify-content-center" id="Footer">
+
+</div>
+</body>
+</html>
