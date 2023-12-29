@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Ahead</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Main-Styles.css">
+</head>
+<body>
+<div class="row bg-secondary text-center py-3 fixed-top" id="navbar">
+    <div class="col-6 col-md-2"><h3><a href="../index.html">Lucas Ackman</a></h3></div>
+    <div class="col-6 col-md-2 offset-md-8"><h3><a href="../ContactMe.html">Contact Me</a></h3></div>
+</div>
+<div class="py-4"></div>
+<div class="row text-primary justify-content-center border-bottom border-4 d-none d-sm-block">
+    <img src="../Images/Getting-Ahead/Banner.png" alt="Template Banner">
+</div>
+<div class="d-md-none my-4">x.x</div>
+<div class="container">
+    <div class="row border border-3 border-primary px-3">
+        <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-primary" id="Project-Overview">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Brief Description</h4>
+                <p class="text-indent text-primary">
+                    Getting Ahead was my second of three university capstone projects. It's my first multiplayer
+                    project, though luckily I had spent the previous summer break developing my Kickstarter Package
+                    which included a local multiplayer input system. The primary gameplay loop consists of player
+                    spawning in one room, and the players must work together to defeat all the enemies in a room before
+                    they are able to move on to the next room. Whenever a player takes too much damage and dies, they
+                    will be decapitated but aren't out yet, instead if there is an available body in the room they can
+                    'recapitate' that body, gaining the attacks and statistics associated with the body. Players can
+                    also leave their current body whenever they wish if there is a more suitable body available for
+                    them, or if they wish to mess with their friends and steal a body from them.
+                </p>
+                <p class="text-indent text-primary">
+                    Players will be assigned one of two classes randomly at the start of each game, either the melee
+                    Knight / Squire or the ranged Wizard. Enemy classes will be room dependent, with each room having
+                    some amount of points and will spawn enemies until it runs out of points. Enemy classes include the
+                    Goblin, Salamander, Golem, and Zombie. There is friendly fire between both enemies and players,
+                    encouraging players to think about how they might make enemies attack each other, while also
+                    including the opprotunity for them to attack each other, creating a very playful experience.
+                </p>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <p class="text-indent text-primary">
+                    This was the first large scale project on which I was the tech team lead. This meant that I was
+                    responsible for ensuring that the game could be completed by managing and reworking the design to
+                    fit an appropriate scope throughout the project. I was also responsible for assigning issues to each
+                    member of my team at the start of each development sprint.
+                </p>
+            </div>
+            <div class="row border border-3 border-primary px-3 py-3">
+                <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Images/Getting-Ahead/Gameplay.png" class="my-2 d-block"
+                                 alt="Level One of 'A Statue of Time'">
+                            <div class="carousel-caption bg-tertiary rounded-pill">
+                                <h3>Single-Player Gameplay</h3>
+                                <p>An example procedurally placed level.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/Getting-Ahead/Decapitated.png" class="my-2 d-block"
+                                 alt="Level Two of 'A Statue of Time'">
+                            <div class="carousel-caption bg-tertiary rounded-pill">
+                                <h3>Decapitated Bodies</h3>
+                                <p>After enemies die, they might become decapitated, allowing players to wear the
+                                    body.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/Getting-Ahead/Goblin-Knight.png" class="my-2 d-block"
+                                 alt="Level Two Solution of 'A Statue of Time'">
+                            <div class="carousel-caption bg-tertiary rounded-pill">
+                                <h3>The Knight Goblin Combination</h3>
+                                <p>The Knight player while wearing a Goblin Body</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/Getting-Ahead/SalamanderKnight.png" class="my-2 d-block"
+                                 alt="Level Two of 'A Statue of Time'">
+                            <div class="carousel-caption bg-tertiary rounded-pill">
+                                <h3>The Knight Salamander Combination</h3>
+                                <p>The Knight player while wearing a Salamander Body</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/Getting-Ahead/Multiplayer.png" class="my-2 d-block"
+                                 alt="Level Three Solution of 'A Statue of Time'">
+                            <div class="carousel-caption bg-tertiary rounded-pill">
+                                <h3>Multiplayer Gameplay</h3>
+                                <p>3 out of 4 total players playing together</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#image-carousel"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-primary">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Challenges Faced</h4>
+                <ol>
+                    <li class="text-primary">
+                        As this was my first leadership role, I had to learn how to handle assignments of issues.
+                        Initially, I took the route of assigning an equal ammount of work to each person for each
+                        sprint, often based on the amount of work I would be doing. I quickly realized that this meant I
+                        was overworking my teammates, as they didn't have the available time that I had, and so I needed
+                        a solution.
+                    </li>
+                    <li class="text-primary">
+                        I had to develop a whole system for how the decapitation and recapitation would function. This
+                        was my most complex game mechanic that I had designed at the time, so I made sure to think about
+                        it deeply before beginning the process. Ultimately, this made the system far easier to produce,
+                        though with one issue that I only realized far later in development. On some cases when a player
+                        would die, the decapitation would be fail somewhere, causing the body to keep moving, and the
+                        head be unable to recapitate.
+                    </li>
+                </ol>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Lessons Learned</h4>
+                <ol>
+                    <li class="text-primary">
+                        I had taken the route of looking at each member on my team individually. I would ask them what
+                        they felt comfortable working on so that I could feel confident they knew how to do it and I'd
+                        also consider how long the task would likely take to complete and compare with the time per week
+                        they were able to commit to the project. This ultimately balanced out development a lot better.
+                        I had a lot more time available to work on the project and so I was giving myself the bigger
+                        tasks in development, meanwhile the other developers would get smaller tasks to ensure that they
+                        could still complete it within a single sprint.
+                    </li>
+                    <li class=" text-primary">
+                        To develop the capitation system, I had gotten out my whiteboard and written out the step for
+                        each variation of capitations, from enemy decapitations, player decapitations, and player
+                        recapitations. That was the key that made developing this system so much easier. However, the
+                        bug came from a remnant in the capitation system from before I had developed the enemy AI. Once
+                        the AI was implemented, it revealed a bug due to player registration in the capitation
+                        controller. Ultimately, it was simple to solve as it was just legacy code from before I
+                        implemented AI for enemies.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-primary justify-content-center" id="Footer">
+
+</div>
+</body>
+</html>
