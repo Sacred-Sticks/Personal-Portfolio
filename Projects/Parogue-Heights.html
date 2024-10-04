@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parogue Heights</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/Main-Styles.css">
+</head>
+<body>
+    <div class="row bg-secondary text-center d-flex px-5 py-3 fixed-top justify-content-between" id="navbar">
+        <div class="col-md-4 col-md-2 d-none d-md-flex justify-content-center"><h1><a href="../index.html">Lucas Ackman</a></h1></div>
+        <div class="col-md-4 col-md-2 d-none d-md-flex justify-content-center"><h1><a href="Projects.html">Projects</a></h1></div>
+        <div class="col-md-4 col-md-2 d-none d-md-flex justify-content-center"><h1><a href="../ContactMe.html">Contact Me</a></h1></div>
+
+        <div class="col-12 d-md-none justify-content-between">
+            <div class="row"><h1><a href="../index.html">Lucas Ackman</a></h1></div>
+            <div class="row"><h1><a href="Projects.html">Projects</a></h1></div>
+            <div class="row"><h1><a href="../ContactMe.html">Contact Me</a></h1></div>
+        </div>
+    </div>
+<div class="py-4"></div>
+<div class="row text-primary justify-content-center border-bottom border-4 d-none d-sm-block">
+    <img src="../Images/Blacksite-Theta/Banner.png" alt="Template Banner">
+</div>
+<div class="d-md-none my-4">x.x</div>
+<div class="container">
+    <div class="row border border-3 border-primary px-3">
+        <h2 class="text-header text-center pb-2 pt-4">Project Overview</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-primary" id="Project-Overview">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Brief Description</h4>
+                <span class="text-indent text-primary">
+                    After graduating from university I decided to work on my own solo project while searching for a job
+                    to keep my skills sharp and even refine my skills in the Unity physics engine. To do this, I initially
+                    started working on a game I called Dodge-Bots, which was a robotic trampoline dodgeball. I realized
+                    quickly that I wouldn't be able to create the online multiplayer that I desired and so I redesigned
+                    the game in such a way that I could keep the trampoline physics I had developed. From this, Parogue
+                    Heights was born. This is a physics based platformer-roguelike in which you gain spells and use those
+                    spells to gain height through actions like a dash, back-dash, hookshot, launch, and bounce-pads (the 
+                    trampolines).
+                </span>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Contributions and Responsibilities</h4>
+                <span class="text-indent text-primary">
+                    I created all of the code contained within the project. I did use external sources for some tools, such
+                    as my asynchronous scene-loading bootstrapper which I found online and took the time to understand how
+                    it worked. However, any gameplay elements such as the inventory, character controller, spells, UI, and
+                    more were programmed by myself over the course of a few months.
+                </span>
+                <span class="text-indent text-primary"></p>
+                    I would practice rapid prototyping on this project. I gathered a group of fellow game developers into an
+                    online server with myself and I would try to send out a new prototype every two weeks at the most. Each
+                    prototype would have a variety of changes, such as recreating the airborne movement system to interfere
+                    less with the spells, as well as new features. All of the prototypes are still actively accessible on
+                    my personal <a href="https://sacred-sticks.itch.io/parogue_heights" class="itch-link">Itch page.</a>
+                </span>
+            </div>
+            <div class="row border border-3 border-primary px-3 py-3">
+                <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Images/Parogue Heights/Main Menu.png" class="my-2 d-block"
+                                 alt="Main Menu of Parogue Heights">
+                            <div class="carousel-caption bg-tertiary rounded-pill">
+                                <h3>Main Menu</h3>
+                                <p>
+                                    Custom menu layout built in C# for the UIToolkit containing all of the essential sub-menus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/Parogue Heights/Spell Pickup.png" class="my-2 d-block"
+                                 alt="The Main Character Stands next to a Spell Pickup Station">
+                            <div class="carousel-caption bg-tertiary rounded-pill">
+                                <h3>Spell Pickup Station</h3>
+                                <p>
+                                    These pink orbs would grant the player new spells in their inventory when collected before
+                                    destroying themselves.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/Parogue Heights/Bounce Pad.png" class="my-2 d-block"
+                                 alt="The Main Character Standing next to a Glowing Rune on the Floor">
+                            <div class="carousel-caption bg-tertiary rounded-pill">
+                                <h3>The Bounce Pad</h3>
+                                <p>
+                                    These pads could be placed at any angle and when the player collides with it they are sent
+                                    flying in the pads transform.up direction.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/Parogue Heights/Pause Menu.png" class="my-2 d-block"
+                                 alt="Pause Menu for Parogue Heights">
+                            <div class="carousel-caption bg-tertiary rounded-pill">
+                                <h3>Clean Pause Menu</h3>
+                                <p>
+                                    This menu, built from C# in the UIToolkit, includes each menu found from the main menu for
+                                    convenience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#image-carousel"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-primary">
+            <div class="row border border-3 border-primary px-3 py-3">
+                <h4 class="text-secondary text-center">Challenges Faced</h4>
+                <ol>
+                    <li class="text-primary">
+                        <p>
+                            I knew from the very beginning that I wanted my inventory system to be very robust and 
+                            resistant to new spells being added later in development. My initial plan for the
+                            inventory was a very simple system in which I would declare an integer variable for
+                            each spell type to count the amount of each that I had. Of course, this does not scale
+                            at all, as for any new spells that I added later in development I would have needed to
+                            go back to the inventory system and modify it, breaking the Open-Closed Principle.
+                        </p>
+                    </li>
+                    <li class="text-primary">
+                        <p>
+                            I needed a system in which I could load in pieces of the level procedurally so that
+                            every playthrough could be unique. Throughout developing this section of the game I
+                            faced a variety of problems, such as my third-person camera colliding with the walls
+                            and making it nearly impossible to see anything. 
+                        </p>
+                    </li>
+                    <li class="text-primary">
+                        <p>
+                            I also had issues ensuring that an appropriate amount of level would be generated 
+                            when the player nears the top. I couldn't have the game load in too much too early,
+                            as that could cause significant lag. I needed it to manage itself without overworking
+                            the hardware.
+                        </p>
+                    </li>
+                </ol>
+                <div class="border-top border-bottom mt-4 mb-4"></div>
+                <h4 class="text-secondary text-center">Lessons Learned</h4>
+                <ol>
+                    <li class="text-primary">
+                        <p>
+                            Interfaces... I love interfaces. I used an ISpell interface to declare that a class 
+                            was a type of spell. From there, whenever the player would collect a new spell, my 
+                            inventory would check if it already has an inventory slot with that type of spell to 
+                            add to the total count, if not it would create a new one. Each inventory slot would
+                            simply hold data to be accessible from the inventory system. This allowed me to build
+                            a dynamic inventory which required absolutely no modification when I later added two
+                            more spells, the forwards and back-dash. 
+                        </p>
+                    </li>
+                    <li class="text-primary">
+                        <p>
+                            I had actually shown one of my later prototypes, I believe it was prototype 6, at a
+                            game development expo and somebody who has far more experience than me pointed out
+                            a perfect solution to my camera problem. All I needed to do was modify the LayerMask
+                            of collisions that the VirtualCamera would collide against to no longer include the
+                            walls, and then modify the wall models to no longer have a backside. This ensured that
+                            the camera would not be messed up by the existence of the walls, as it now is unaware
+                            of the walls entirely.
+                        </p>
+                    </li>
+                    <li class="text-primary">
+                        <p>
+                           As for loading in a proper amount of the level at a time, I created a trigger box which
+                           was quite tall and placed it at a height of 0. That way the player would begin within the
+                           trigger, triggering it immediately. When triggered, it instantiates new sections of the
+                           tower selecting randomly from an appropriate array of prefabs and places them at their
+                           respective heights, and then moves itself to be halfway up the newly built sections height.
+                           This way, I know that it's high enough where it can still be triggered again, but not too
+                           high where the player can see the top of the tower when they trigger it. 
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row text-primary justify-content-center" id="Footer">
+
+</div>
+</body>
+</html>
