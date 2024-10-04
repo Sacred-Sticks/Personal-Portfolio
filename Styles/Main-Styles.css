@@ -106,7 +106,7 @@ a:hover {
 .itch-link {
     text-decoration: underline;
     font-style: italic;
-    color: rgb(0, 0, 255);
+    color: rgb(120, 120, 255);
     display: inline !important;
     white-space: nowrap !important;
     word-wrap: normal;
